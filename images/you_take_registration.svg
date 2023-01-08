@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 81" width="305" height="81">
+	<title>Верхняя панель навигации</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 18px;line-height: 15px;fill: #fffeff;font-family: "OriginalbyBrynda", MinecraftCHMC; } 
+		.t1 { font-size: 20px;line-height: 15px;fill: #fffeff;font-family: "OriginalbyBrynda", MinecraftCHMC; } 
+	</style>
+	<g id="Верхняя панель навигации">
+		<text id="You take full responsibility for your actions. Interaction with" style="transform: matrix(.947,0,0,.947,-1.048,.438)" >
+			<tspan x="4" y="15.2" class="t0">You take full responsibility for your actions. Interaction with the smart contract agree with the rules of the game, and also understand that blockchain transactions are irrevocable. *All the rules are contained in the smart contract* </text>
+	</g>
+</svg>

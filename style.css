@@ -1,0 +1,1747 @@
+@font-face {
+    font-family: "OriginalbyBrynda";
+    src: url(fonts/Minecraftchmc.ttf);
+}
+.body {
+    overflow: hidden;
+    margin: 0px;
+    background-image: url("images/bg_start.png");
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 647px;
+    z-index: -1;
+}
+.bg-my-room {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/BG_animated.gif");
+    background-size: cover;
+    background-position: bottom left;
+}
+.icon-kaktus {
+    width: 200px;
+}
+.btn-start {
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    background-image: url(images/start_btn.png);
+    color: white;
+    font-family: "OriginalbyBrynda";
+    height: 78.5px;
+    border: none;
+}
+.modal-image-login {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("images/modal_login.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 550px;
+    border: none;
+}
+.modal-image-registr {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("images/modal_registr.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+    border: none;
+}
+.modal-image-poisk {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("images/bg-poisk.png");
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50vh;
+    margin-left: auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 4.5vh;
+    font-family: "OriginalbyBrynda";
+    font-weight: 600;
+}
+.modal-padding-login {
+    padding: 60px 60px 0px 60px;
+}
+.modal-padding-registr {
+    padding: 6px 32px 6px 32px;
+}
+.img-login {
+    width: 100px;
+    margin: auto auto auto auto;
+}
+.hero-registr {
+    font-size: 40pt;
+    height: 45px;
+    color: #5d3360;
+    font-family: "OriginalbyBrynda";
+    margin: 0px auto 0px auto;
+    position: relative;
+    bottom: 10px;
+}
+.registr-activate {
+    width: 370px;
+    margin: 0px auto 0px auto;
+    color: white;
+    text-align: center;
+    font-family: "OriginalbyBrynda";
+    font-size: 27px;
+    line-height: 18px;
+    fill: #fffeff;
+    margin-top: 4px;
+}
+.text-registr-activate {
+    font-family: "OriginalbyBrynda";
+    color: white;
+    line-height: 18px;
+    font-size: 27px;
+    text-align: center;
+}
+.head-modal {
+    display: flex;
+    height: 90px;
+}
+.img-walet {
+    width: 80%;
+    margin: auto;
+}
+.img-fox {
+    width: 70%;
+    margin: auto;
+}
+.img-connect {
+    width: 60%;
+    margin: auto;
+}
+.img-token {
+    width: 55%;
+    margin: auto;
+}
+.img-safe {
+    width: 55%;
+    margin: auto;
+}
+.img-trust {
+    width: 55%;
+    margin: auto;
+}
+.img-coin {
+    width: 65%;
+    margin: auto;
+}
+.mt-modal-row {
+    margin-top: 15px;
+}
+.px-modal {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.text-fox {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 10pt;
+    height: 18pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(2);
+}
+.body-modal {
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-registr {
+    margin: auto auto 20px auto;
+    background-image: url("images/btn_registration.png");
+    background-size: 100%;
+    background-position: center;
+    border: none;
+    color: white;
+    width: 350px;
+    height: 50px;
+    font-family: "OriginalbyBrynda";
+    font-size: 27px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-registr:hover {
+    color: white;
+}
+.bg-up-line {
+    height: 36px;
+    width: 100%;
+    background-image: url("images/bg_up_line.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0px;
+    display: flex;
+}
+.input-up-line {
+    margin-left: var(--margin-left-input);
+    background-color: #fffeff00;
+    color: white;
+    width: var(--width-input);
+    border: none;
+    outline: none;
+    font-family: "OriginalbyBrynda";
+    font-size: 3.7vh;
+}
+.btn-up-line {
+    margin-left: var(--margin-left-btn);
+    width: var(--margin-left-btn);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.bg-down-line {
+    height: 36px;
+    width: 100%;
+    background-image: url("images/bg_down_line.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0px;
+}
+.bg-up-line-room {
+    height: 6vh;
+    width: 100%;
+    background-image: url("images/bg_up_line.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    margin-left: 15.3vw;
+}
+.menu-top-line {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 15.4vw;
+    background-image: url("images/menu_top_line.png");
+    background-size: 100%;
+    height: 1vw;
+}
+.podmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 15.5vw;
+    height: 77vh;
+}
+.room-icon-kaktus {
+    width: 60%;
+    margin-top: 14%;
+}
+.room-icon-balance {
+    width: 40%;
+    margin-top: 2.5%;
+}
+.balance {
+    width: 65%;
+    height: 4%;
+    margin-top: 4%;
+    background-image: url("images/balance-red.png");
+    background-size: cover;
+    color: white;
+    font-family: "OriginalbyBrynda";
+}
+.btn-menu {
+    width: 70%;
+    height: 15%;
+    background-image: url("images/btn-menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 5.5vh;
+}
+.btn-menu:hover {
+    color: white;
+}
+.btn-active {
+    width: 70%;
+    height: 15%;
+    background-image: url("images/btn-active-menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 5.5vh;
+}
+.btn-active:hover {
+    color: white;
+}
+.buttons-room {
+    margin-top: 9%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.btn-telegram {
+    width: var(--btn-width-height2);
+    height: var(--btn-width-height2);
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    bottom: var(--btn-bottom);
+    left: var(--btn-left);
+}
+.btn-facebook {
+    width: var(--btn-width-height2);
+    height: var(--btn-width-height2);
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    bottom: var(--btn-bottom);
+    left: var(--btn-left);
+}
+.main-div {
+    height: 88.5vh;
+    position: fixed;
+    top: 6vh;
+    left: 15.4vw;
+    width: 84.6vw;
+}
+.active-modal-room {
+    background-size: cover;
+    width: var(--width-active-modal);
+    height: var(--height-active-modal);
+    margin-top: var(--mt-active-modal);
+    margin-right: var(--mr-active-modal);
+    padding-top: var(--pt-active-modal);
+    padding-left: var(--pl-active-modal);
+    padding-right: var(--pr-active-modal);
+}
+.bg-active-modal-room1 {
+    background-image: url("images/active_modal_room.png");
+}
+.bg-active-modal-room2 {
+    background-image: url("images/bg-active-modal-room.png");
+}
+.text-active-modal-room {
+    margin-top: 1.5vh;
+    color: white;
+    text-align: center;
+    font-family: "OriginalbyBrynda";
+    font-size: 3.9vh;
+    line-height: 0.7;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+.div-btn-buy {
+    margin-top: 17vh;
+    width: 100%;
+    height: var(--height-btn-buy);
+    display: flex;
+    justify-content: center;
+}
+.div-btn-available {
+    margin-top: 12vh;
+    width: 100%;
+    height: var(--height-btn-buy);
+    display: flex;
+    justify-content: center;
+}
+.btn-buy {
+    width: 35%;
+    height: 100%;
+    font-family: "OriginalbyBrynda";
+    color: white;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-image: url("images/btn-buy.png");
+    background-size: cover;
+}
+.btn-available {
+    width: 83%;
+    height: 100%;
+    font-family: "OriginalbyBrynda";
+    color: white;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-image: url("images/bg-available.png");
+    background-size: cover;
+}
+.box-buttons {
+    width: var(--width-buttons);
+    height: var(--height-buttons);
+    display: flex;
+    gap: 1%;
+    margin-right: var(--mr-buttons);
+}
+.buttons-20 {
+    background-size: cover;
+    width: 9.9%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.img-buttons {
+    height: 45%;
+}
+.button-green {
+    background-image: url("images/button_green.png");
+}
+.button-red {
+    background-image: url("images/button_red.png");
+}
+.active-button-green {
+    background-image: url("images/active_button_green.png");
+}
+.button-purple {
+    background-image: url("images/button_purple.png");
+}
+.mt-box2 {
+    margin-top: var(--mt-box2);
+}
+.mt-box1 {
+    margin-top: var(--mt-box1);
+}
+.head-active-modal-room {
+    width: 100%;
+    height: var(--height-head-active-modal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.flower {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 6.5vh;
+    margin-bottom: 2%;
+    height: 37%;
+    display: flex;
+    align-items: center;
+}
+.flower-bnb {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 3vh;
+}
+.list-number {
+    width: 100%;
+    height: var(--height-list-number);
+    display: flex;
+}
+.text-list-number {
+    color: rgb(41, 42, 23);
+    font-family: "OriginalbyBrynda";
+    font-size: 6vh;
+    margin-bottom: 2%;
+    height: 100%;
+    width: 5.5%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.border-text {
+    width: 100%;
+    height: var(--height-border-text);
+    margin-top: var(--mt-border-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-border-text {
+    width: 58%;
+}
+.one-of-three {
+    width: 100%;
+    height: var(--height-one-of-three);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-one-of-three {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 10vh;
+}
+.lable {
+    height: var(--height-lable);
+    margin-top: var(--mt-lable);
+    display: flex;
+    align-items: top;
+}
+.lable1 {
+    width: 40.9%;
+    height: 91%;
+    margin-left: 4.8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lable2 {
+    width: 40.9%;
+    height: 91%;
+    margin-left: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-lable {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 2.99vh;
+}
+.group-inputs {
+    width: 100%;
+    height: var(--height-group-inputs);
+    display: flex;
+    align-items: center;
+}
+.input1 {
+    width: 40.9%;
+    margin-left: 4.8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.input2 {
+    width: 40.9%;
+    margin-left: 9%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.text-input1 {
+    margin-left: 2%;
+    color: rgb(203, 162, 23);
+    font-family: "OriginalbyBrynda";
+    font-size: 4vh;
+}
+.text-input2 {
+    margin-left: 2%;
+    color: rgb(100, 164, 19);
+    font-family: "OriginalbyBrynda";
+    font-size: 4vh;
+}
+.div-button {
+    width: 100%;
+    height: var(--height-div-button);
+    margin-top: var(--mt-div-button);
+}
+.active-modal-button {
+    width: 51.55%;
+    height: 100%;
+    margin-left: 24.45%;
+    margin-right: 24%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-active-modal-button {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 4vh;
+}
+.up-line-right {
+    background-image: url("images/up_line_right.png");
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: var(--mr-line-right);
+    height: 6vh;
+    width: 11vh;
+    display: flex;
+    align-items: center;
+}
+.btn-poisk {
+    width: 47.6%;
+    height: 88%;
+    background-color: #fffeff00;
+    border: none;
+    cursor: pointer;
+}
+.btn-exit {
+    width: 47.8%;
+    height: 88%;
+    background-color: #fffeff00;
+    border: none;
+    cursor: pointer;
+    margin-left: 4%;
+}
+.top-line-mobile {
+    background-image: url("images/menu_top_line.png");
+    background-size: 99.25%;
+    width: 100%;
+    height: 3vh;
+}
+.btn_telegram_tel {
+    display: none;
+}
+.btn_facebook_tel {
+    display: none;
+}
+.menu-bottom-buttons {
+    display: none;
+}
+.d-flex-tel {
+    display: flex;
+    flex-direction: column;
+}
+.btn-icon-menu {
+    display: none;
+}
+.animate-right {
+    left: 0px !important;
+}
+.fl-w-100 {
+    width: 100%;
+    margin-bottom: 2%;
+    height: 20%;
+}
+.main-dashboard {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 4.5vw;
+    font-weight: 700;
+    height: 5.7vw;
+}
+.podmain {
+    height: 100vh;
+    padding-top: 1%;
+    padding-left: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+}
+.dashboard-modal1 {
+    width: 19vw;
+    height: 15.7vw;
+    background-image: url("images/dashboard_modal1.png");
+    background-size: cover;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.2vw;
+    padding-left: 2.55vw;
+    padding-right: 2.23vw;
+}
+.img-dashboard-modal1 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.image-dashboard-modal1 {
+    width: 60%;
+    height: 95%;
+    object-fit: cover;
+}
+.id-dashboard-modal1 {
+    color: rgb(41, 42, 23);
+    text-align: center;
+    font-weight: 700;
+    font-family: "OriginalbyBrynda";
+    font-size: 2.2vw;
+    height: 2.6vw;
+}
+.text-dashboard-modal1 {
+    color: white;
+    text-align: center;
+    font-family: "OriginalbyBrynda";
+    font-size: 2.2vw;
+}
+.text1-dashboard-podmodal1 {
+    color: white;
+    margin-left: 1vw;
+    width: 19vw;
+    text-align: center;
+    font-family: "OriginalbyBrynda";
+    font-size: 1.4vw;
+    height: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text2-dashboard-podmodal1 {
+    color: white;
+    margin-left: 1vw;
+    width: 19vw;
+    text-align: center;
+    font-family: "OriginalbyBrynda";
+    font-size: 1.4vw;
+    height: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-modal2 {
+    margin-left: 1.5vw;
+    margin-top: 2vw;
+}
+.line1-dashboard-modal2 {
+    color: white;
+    background-color: rgb(130, 83, 131);
+    box-shadow: inset 0.3vw 0.3vw 0.1vw rgb(191, 129, 193), inset -0.3vw -0.3vw 0.1vw rgb(99, 56, 100);
+    width: 25vw;
+    height: 1.72vw;
+    font-family: "OriginalbyBrynda";
+    padding-left: 0.7vw;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+.text1-dashboard-modal2 {
+    color: white;
+    font-size: 2.5vw;
+    height: 2vw;
+    font-family: "OriginalbyBrynda";
+    display: flex;
+    align-items: center;
+}
+.dashboard-my-referral {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 3vw;
+    font-weight: 600;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 2vw;
+}
+.dashboard-predmodal3 {
+    margin-left: 2.5vw;
+}
+.dashboard-modal3 {
+    background-image: url("images/img-dashboard-modal3.png");
+    background-size: cover;
+    width: 23vw;
+    height: 12.3vw;
+    position: relative;
+    bottom: 2vw;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    padding-top: 0.6vw;
+}
+.head-dashboard-modal3 {
+    width: 100%;
+    height: 32.7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-img-dashboard-modal3 {
+    width: 40%;
+}
+.body-dashboard-modal3 {
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-family: "OriginalbyBrynda";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.footer-dashboard-modal3 {
+    width: 100%;
+    height: 32.3%;
+}
+.btn-dashboard-modal3 {
+    width: 32.1%;
+    margin-left: 36.3%;
+    margin-right: 31.6%;
+    height: 60%;
+    margin-top: 4.6%;
+    margin-bottom: 35.4%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "OriginalbyBrynda";
+    font-size: 2vw;
+}
+.notification {
+    display: flex;
+    align-items: center;
+    width: 72vw;
+    height: 1.7vw;
+    background-color: rgb(130, 83, 131);
+    box-shadow: inset 0.25vw 0.25vw 0.1vw rgb(191, 129, 193), inset -0.25vw -0.25vw 0.1vw rgb(99, 56, 100);
+    color: white;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-bottom: 0.4vw;
+}
+.text1-notification {
+    font-family: "OriginalbyBrynda";
+    font-size: 1.6vw;
+}
+.text2-notification {
+    font-family: "OriginalbyBrynda";
+    font-size: 1.6vw;
+    margin-left: auto;
+}
+.flower-absolute {
+    position: absolute;
+    top: inherit;
+    bottom: 5.4vw;
+    left: 30vw;
+    width: 27vh;
+}
+.list-referrals1 {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    background-color: rgb(130, 83, 131);
+    box-shadow: inset 0.35vw 0.35vw 0.1vw rgb(191, 129, 193), inset -0.35vw -0.35vw 0.1vw rgb(99, 56, 100);
+    width: 30vw;
+    height: 2vw;
+    padding-left: 0.7vw;
+    display: flex;
+    align-items: center;
+    font-size: 2.2vw;
+}
+.podlist-referrals1 {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    height: 2.5vw;
+    margin-left: 0.25vw;
+}
+.mt-list-referrals1 {
+    margin-top: 0.25vw;
+}
+.main-referrals2 {
+    margin-left: 5vw;
+    width: 36vw;
+    height: 18.9vw;
+    background-image: url("images/image-referrals2.png");
+    background-size: cover;
+    position: absolute;
+    top: -5vw;
+    left: 30vw;
+    padding-top: 3.1vw;
+    padding-left: 5vw;
+    padding-right: 4.95vw;
+}
+.head-referrals2 {
+    width: 100%;
+    height: 9.85vw;
+    position: relative;
+}
+.imgflower1-referrals2 {
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+    width: 35%;
+}
+.imgflower2-referrals2 {
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    width: 34%;
+}
+.imgflower3-referrals2 {
+    position: absolute;
+    bottom: 0px;
+    right: 6%;
+    width: 40%;
+}
+.body-referrals2 {
+    width: 100%;
+    margin-top: 0.35vw;
+    height: 3.86vw;
+    display: flex;
+    justify-content: center;
+}
+.btn-referrals2 {
+    width: 15%;
+    height: 100%;
+    background-image: url("images/imgbtn-referrals2.png");
+    background-size: cover;
+    border: none;
+    box-shadow: inset 0.2vw 0.2vw 0.05vw rgb(67, 34, 61), inset -0.21vw -0.21vw 0.05vw rgb(131, 70, 130);
+}
+.d-none-predmodal3-referrals {
+    display: none;
+}
+.modal-bg-white {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    background-image: url("images/bg-poisk.png");
+    background-position: center;
+    background-size: 130%;
+    width: 400px;
+    font-family: "OriginalbyBrynda";
+    font-size: 18pt;
+    font-weight: 700;
+    line-height: 0.7;
+}
+.sun-modal {
+    height: 15px;
+    position: relative;
+    bottom: 2px;
+}
+.m-modal-white {
+    margin-top: 0px;
+}
+.modal-out-game {
+    background-color: #fffeff00;
+    border: none;
+    background-image: url("images/bg-out-game.png");
+    background-size: cover;
+    border-radius: 0px;
+    width: 500px;
+    height: 235px;
+}
+.head-modal-exit {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "OriginalbyBrynda";
+    font-size: 35pt;
+    color: #fba325;
+    font-weight: 600;
+}
+.body-modal-exit {
+    margin-top: 9px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 25pt;
+    text-align: center;
+    line-height: 0.7;
+}
+.footer-modal-exit {
+    margin-top: 8px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-modal-level {
+    margin-top: 8px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.btn-exit-modal {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 35pt;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.btn-exit-modal:hover {
+    color: white;
+}
+.btn-level-modal {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 22pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+.btn-level1 {
+    background-image: url("images/btn-level-cancel.png");
+    background-size: cover;
+    width: 154px;
+    margin-right: 25px;
+}
+.btn-level2 {
+    background-image: url("images/btn-level-buy.png");
+    background-size: cover;
+    width: 105px;
+    margin-right: 15px;
+}
+.img-success-exit {
+    height: 21px;
+    margin-right: 3px;
+}
+.me-bnb {
+    margin-right: 1vh;
+}
+@media (max-aspect-ratio: 18.5/9) {
+    .bg-up-line-room {
+        margin-left: var(--margin-left);
+    }
+    .menu-top-line {
+        display: none;
+    }
+    .podmenu {
+        width: var(--width);
+    }
+    .main-div {
+        left: var(--margin-left);
+        height: 88.5vh;
+        width: var(--main-width);
+    }
+    .flower-absolute {
+        display: block;
+        position: absolute;
+        top: inherit;
+        bottom: 11.1vh;
+    }
+}
+@media (max-aspect-ratio: 13/9) {
+    .bg-my-room {
+        background-image: url("images/BG_animated_mobile.gif");
+    }
+    .bg-up-line-room {
+        margin-left: 0px !important;
+        z-index: 100;
+    }
+    .podmenu {
+        background-image: url("images/bg_podmenu.png");
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+        left: var(--left);
+        z-index: 500;
+        transition: 1s;
+    }
+    .btn-menu {
+        height: 6vh !important;
+    }
+    .btn-active {
+        height: 6vh !important;
+    }
+    .btn-facebook {
+        display: none;
+    }
+    .btn-telegram {
+        display: none;
+    }
+    .btn_telegram_tel {
+        display: block;
+        width: 27%;
+        height: 8.7%;
+        position: absolute;
+        left: 20%;
+        bottom: 4.2%;
+        border-radius: 50%;
+    }
+    .btn_facebook_tel {
+        display: block;
+        width: 27%;
+        height: 8.7%;
+        position: absolute;
+        left: 52.8%;
+        bottom: 4.2%;
+        border-radius: 50%;
+    }
+    .menu-bottom-buttons {
+        background-image: url("images/up_line_right.png");
+        background-size: cover;
+        position: absolute;
+        left: 21%;
+        bottom: 22%;
+        width: 58%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .up-line-right {
+        display: none;
+    }
+    .main-div {
+        width: 100vw !important;
+        left: 0px !important;
+    }
+    .active-modal-room {
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 50;
+    }
+    .mt-box1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mt-box2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .d-flex-tel {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .btn-icon-menu {
+        display: block;
+        margin-left: var(--ml-btn-menu);
+        border: none;
+    }
+    .input-up-line {
+        margin-left: var(--margin-left-input-tel);
+    }
+    .flower-absolute {
+        display: block;
+        position: absolute;
+        top: 37vw;
+        bottom: inherit;
+        left: inherit;
+        width: 51vw;
+        margin-left: 24.5vw;
+        margin-right: 24.5vw;
+    }
+    .podmain {
+        padding-top: 6vh;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    .main-dashboard {
+        font-size: 6.5vh;
+        height: 8vh;
+    }
+    .dashboard-modal1 {
+        width: 25vw;
+        height: 20.5vw;
+        padding-left: 3.3vw;
+        padding-right: 2.85vw;
+        padding-top: 2.75vw;
+    }
+    .text1-dashboard-podmodal1 {
+        width: 25vw;
+        font-size: 1.6vw;
+        height: 1.6vw;
+    }
+    .text2-dashboard-podmodal1 {
+        width: 25vw;
+        font-size: 1.6vw;
+        height: 1.2vw;
+    }
+    .id-dashboard-modal1 {
+        font-size: 2.7vw;
+        height: 3.8vw;
+    }
+    .dashboard-modal2 {
+        margin-left: 2vw;
+        margin-top: 2.5vw;
+    }
+    .line1-dashboard-modal2 {
+        width: 31.3vw;
+        height: 2.3vw;
+        font-size: 2.2vw;
+    }
+    .dashboard-predmodal3 {
+        margin-left: 3.2vw;
+    }
+    .dashboard-modal3 {
+        width: 31vw;
+        height: 16.6vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 0.8vw;
+    }
+    .notification {
+        width: 94vw;
+        height: 2.5vw;
+        padding-left: 0.8vw;
+        padding-right: 0.8vw;
+    }
+    .text1-notification {
+        font-size: 2vw;
+    }
+    .text2-notification {
+        font-size: 2vw;
+    }
+    .main-referrals2 {
+        margin-left: 4vw;
+        width: 50vw;
+        height: 26.4vw;
+        left: 40vw;
+        top: -4vw;
+        padding-top: 4.3vw;
+        padding-left: 6.9vw;
+        padding-right: 6.7vw;
+    }
+    .list-referrals1 {
+        width: 40vw;
+        height: 3vw;
+        padding-left: 1vw;
+        font-size: 3vw;
+    }
+    .podlist-referrals1 {
+        font-size: 4vw;
+        height: 3.5vw;
+    }
+    .head-referrals2 {
+        height: 13.8vw;
+    }
+    .body-referrals2 {
+        height: 5.4vw;
+    }
+    .modal-bg-white {
+        background-image: url("images/bg-white.png");
+        background-position: center;
+        background-size: 100%;
+        width: 370px;
+        height: 71px;
+        margin-top: 1vh;
+        font-size: 24pt;
+        font-weight: 700;
+        line-height: 0.7;
+        border-radius: 0px;
+    }
+    .sun-modal {
+        height: 19px;
+    }
+    .p-modal-white {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-aspect-ratio: 13/9) {
+    .main-div {
+        flex-direction: column-reverse !important;
+        height: auto !important;
+        background-image: url("images/BG_mobile.svg");
+        background-position: bottom;
+        background-size: 100%;
+        position: inherit;
+    }
+    .active-modal-room {
+        margin-bottom: 2vh;
+        margin-top: 1vh;
+        min-height: 86vw;
+        height: 86vw;
+        width: 97vw;
+        padding-top: 7vw;
+        padding-left: 11.3vw;
+        padding-right: 9.8vw;
+    }
+    .bg-active-modal-room1 {
+        background-image: url("images/active_modal_room_mobile.png");
+    }
+    .bg-active-modal-room2 {
+        background-image: url("images/bg_active_modal_room_mobile.png");
+    }
+    .text-active-modal-room {
+        margin-top: 2.5vw;
+        font-size: 8vw;
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
+    .div-btn-buy {
+        margin-top: 27vw;
+        height: 9.3vw;
+    }
+    .div-btn-available {
+        margin-top: 16vw;
+        height: 9.3vw;
+    }
+    .btn-buy {
+        width: 35%;
+        font-size: 8vw;
+    }
+    .btn-available {
+        font-size: 8vw;
+    }
+    .box-buttons {
+        flex-direction: column;
+        width: var(--height-buttons-tel);
+        height: var(--width-buttons-tel);
+    }
+    .d-flex-tel {
+        display: flex;
+        flex-direction: row;
+    }
+    .buttons-20 {
+        width: 100%;
+        height: 9.9%;
+    }
+    .mt-box2 {
+        margin-top: var(--mt-box1);
+        margin-right: 10vw;
+        margin-left: auto;
+    }
+    .mt-box1 {
+        margin-left: 10vw;
+        margin-right: auto;
+    }
+    .list-number {
+        display: none;
+    }
+    .head-active-modal-room {
+        height: 15.5vw;
+        flex-direction: row;
+    }
+    .fl-w-100 {
+        width: 50%;
+        height: 25%;
+        margin-bottom: 0px !important;
+    }
+    .flower {
+        font-size: 12vw;
+        margin-bottom: 0px;
+    }
+    .flower-bnb {
+        font-size: 6vw;
+    }
+    .border-text {
+        display: none;
+    }
+    .one-of-three {
+        height: 15vw;
+        margin-top: 7.3vw;
+    }
+    .text-one-of-three {
+        font-size: 20vw;
+    }
+    .lable {
+        margin-top: 6.7vw;
+        height: 4vw;
+    }
+    .lable1 {
+        margin-left: 6vw;
+        width: 29.3vw;
+    }
+    .lable2 {
+        margin-left: 6.4vw;
+        width: 29.3vw;
+    }
+    .text-lable {
+        font-size: 6vw;
+    }
+    .group-inputs {
+        height: 5.5vw;
+    }
+    .input1 {
+        margin-left: 6.4vw;
+        width: 29.3vw;
+    }
+    .input2 {
+        margin-left: 6.4vw;
+        width: 29.3vw;
+    }
+    .div-button {
+        margin-top: 4.2vw;
+        height: 7.5vw;
+    }
+    .box-buttons {
+        width: 9.1vw;
+        height: 100vw;
+    }
+}
+@media (max-aspect-ratio: 9.7/9) {
+    .d-none-predmodal3 {
+        display: none !important;
+    }
+    .d-none-predmodal3-referrals {
+        display: flex;
+        flex-direction: column;
+    }
+    .dashboard-modal1 {
+        width: 40vw;
+        height: 33vw;
+        margin-left: 0px;
+        padding-left: 5.6vw;
+        padding-right: 4.9vw;
+        padding-top: 4.9vw;
+    }
+    .line1-dashboard-modal2 {
+        width: 51.5vw;
+        height: 3.55vw;
+        font-size: 3vw;
+        padding-left: 0.8vw;
+    }
+    .text1-dashboard-modal2 {
+        font-size: 4vw;
+        height: 4vw;
+    }
+    .dashboard-modal2 {
+        margin-top: 4vw;
+    }
+    .text1-dashboard-podmodal1 {
+        width: 40vw;
+        font-size: 2vw;
+        height: 1.6vw;
+    }
+    .text2-dashboard-podmodal1 {
+        width: 40vw;
+        font-size: 2vw;
+        height: 1.2vw;
+    }
+    .notification {
+        width: 94.5vw;
+        height: 3vw;
+        padding-left: 0.8vw;
+        padding-right: 0.8vw;
+    }
+    .id-dashboard-modal1 {
+        font-size: 4vw;
+        height: 6vw;
+    }
+    .text-dashboard-modal1 {
+        font-size: 3vw;
+    }
+    .text1-notification {
+        font-size: 2.2vw;
+    }
+    .text2-notification {
+        font-size: 2.2vw;
+    }
+    .main-referrals2 {
+        display: none;
+    }
+    .dashboard-modal3 {
+        width: 44vw;
+        height: 23.6vw;
+    }
+    .list-referrals1 {
+        width: 44vw;
+        height: 4vw;
+        padding-left: 1.4vw;
+        font-size: 4.5vw;
+    }
+    .podlist-referrals1 {
+        font-size: 6vw;
+        height: 5.6vw;
+    }
+    .dashboard-predmodal3 {
+        margin-left: 6vw;
+        position: relative;
+        bottom: 3vw;
+    }
+    .dashboard-my-referral {
+        font-size: 4vw;
+        height: 4vw;
+    }
+    .mt-tel-referrals {
+        margin-top: 2vw;
+    }
+    .body-dashboard-modal3 {
+        font-size: 3vw;
+    }
+    .btn-dashboard-modal3 {
+        font-size: 3vw;
+    }
+}
+@media (max-aspect-ratio: 7/9) {
+    .line1-dashboard-modal2 {
+        height: 5vw;
+        padding-left: 1.2vw;
+        font-size: 4.2vw;
+    }
+    .text1-dashboard-modal2 {
+        height: 5vw;
+        font-size: 5vw;
+    }
+    .notification {
+        height: 5vw;
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
+    }
+    .text1-notification {
+        font-size: 3vw;
+    }
+    .text2-notification {
+        font-size: 3vw;
+    }
+}
+@media (max-aspect-ratio: 5.4/9) {
+    .dashboard-modal1 {
+        width: 45vw;
+        height: 37vw;
+        padding-left: 6.3vw;
+        padding-right: 6vw;
+        padding-top: 5.5vw;
+    }
+    .line1-dashboard-modal2 {
+        width: 46.5vw;
+        height: 6vw;
+        font-size: 5vw;
+        padding-left: 1.7vw;
+    }
+    .id-dashboard-modal1 {
+        height: 7vw;
+        font-size: 4.7vw;
+    }
+    .text1-dashboard-podmodal1 {
+        width: 45vw;
+        font-size: 3vw;
+        height: 2.6vw;
+    }
+    .text2-dashboard-podmodal1 {
+        width: 45vw;
+        font-size: 3vw;
+        height: 1.7vw;
+    }
+    .text-dashboard-modal1 {
+        font-size: 3.5vw;
+    }
+    .text1-dashboard-modal2 {
+        height: 6vw;
+        font-size: 6vw;
+    }
+    .notification {
+        height: 6vw;
+        padding-left: 1.7vw;
+        padding-right: 1.7vw;
+    }
+    .text1-notification {
+        font-size: 3.2vw;
+    }
+    .text2-notification {
+        font-size: 3.2vw;
+    }
+    .bg-up-line-room {
+        height: 10vw;
+    }
+    .main-div {
+        margin-top: 10vw;
+    }
+    .podmain {
+        padding-top: 0vh;
+        height: calc(100vh - 10vw);
+    }
+    .flower-absolute {
+        top: 48vw;
+    }
+    .modal-bg-white {
+        background-size: 100%;
+        width: 335px;
+        height: 65px;
+        margin-top: 1vh;
+        font-size: 24pt;
+        font-weight: 700;
+        line-height: 0.7;
+        border-radius: 0px;
+    }
+    .sun-modal {
+        height: 19px;
+    }
+    .p-modal-white {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-aspect-ratio: 18.5/9) {
+    .podmenu {
+        height: 33.3vw;
+    }
+    .btn-menu {
+        height: var(--btn-height);
+    }
+    .btn-active {
+        height: var(--btn-height);
+    }
+    .buttons-room {
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .btn-telegram {
+        width: var(--btn-width-height);
+        height: var(--btn-width-height);
+        left: 3.2vw;
+        bottom: var(--btn-telegram-height);
+    }
+    .btn-facebook {
+        width: var(--btn-width-height);
+        height: var(--btn-width-height);
+        left: 8.2vw;
+        bottom: var(--btn-telegram-height);
+    }
+}
+@media (min-aspect-ratio: 18.5/8) {
+    .room-icon-kaktus {
+        width: 40%;
+    }
+}
+@media (min-aspect-ratio: 18.5/7) {
+    .room-icon-kaktus {
+        display: none;
+    }
+    .room-icon-balance {
+        margin-top: 15%;
+    }
+}
+@media (min-aspect-ratio: 18.5/6) {
+    .room-icon-balance {
+        margin-top: 5%;
+    }
+}
+@media (max-width: 575.5px) {
+    .modal-image-login {
+        height: 105vw;
+    }
+    .modal-image-registr {
+        height: 68vw;
+    }
+    .mt-modal-row {
+        margin-top: 1vw;
+    }
+    .body-modal {
+        margin-top: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .head-modal {
+        height: 20vw;
+    }
+    .modal-padding-login {
+        padding: 10vw 60px 0px 60px;
+    }
+    .img-fox {
+        width: 12vw;
+    }
+    .img-connect {
+        width: 10vw;
+    }
+    .img-connect {
+        width: 10vw;
+    }
+    .img-token {
+        width: 9vw;
+    }
+    .img-safe {
+        width: 9vw;
+    }
+    .img-trust {
+        width: 9vw;
+    }
+    .img-coin {
+        width: 10vw;
+    }
+    .px-modal {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+    .mt-walet {
+        margin-top: 0.7vw;
+    }
+    .hero-registr {
+        height: 8.2vw;
+        font-size: 9.9vw;
+        bottom: 1.9vw;
+    }
+    .registr-activate {
+        width: 60vw;
+        font-size: 4.5vw;
+        line-height: 3.5vw;
+        margin-top: 1vw;
+    }
+    .text-registr-activate {
+        line-height: 3.5vw;
+        font-size: 4.5vw;
+    }
+    .btn-registr {
+        margin: auto auto 4vw auto;
+        width: 58.5vw;
+        height: 8.5vw;
+        font-size: 4.5vw;
+    }
+}
+@media (max-width: 575px) {
+    .modal-out-game {
+        width: 100vw;
+        height: 45.2vw;
+    }
+    .exit-tel-padding {
+        padding-top: 2.8vw;
+        padding-left: 2.8vw;
+        padding-right: 2.8vw;
+        padding-bottom: 2.3vw;
+    }
+    .head-modal-exit {
+        height: 13vw;
+        font-size: 10vw;
+    }
+    .body-modal-exit {
+        margin-top: 1.3vw;
+        height: 11.4vw;
+        font-size: 7vw;
+    }
+    .footer-modal-exit {
+        margin-top: 1.5vw;
+        height: 12.8vw;
+    }
+    .btn-exit-modal {
+        font-size: 10vw;
+    }
+    .img-success-exit {
+        height: 4.4vw;
+        margin-right: 0.5vw;
+    }
+    .footer-modal-level {
+        margin-top: 1.5vw;
+        height: 12.8vw;
+    }
+    .btn-level-modal {
+        font-size: 5vw;
+        height: 6.3vw;
+    }
+    .btn-level1 {
+        width: 27.7vw;
+        margin-right: 5vw;
+    }
+    .btn-level2 {
+        width: 19vw;
+        margin-right: 3vw;
+    }
+    .text-fox {
+        font-size: 2.2vw;
+        height: 4.5vw;
+    }
+}

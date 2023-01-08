@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Main style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg" class="bg-my-room"></div>
+
+    <div id="bg_up_line_room" class="bg-up-line-room py-1">
+        <button id="btn_icon_menu" class="btn btn-icon-menu h-100 py-0" onclick="menu()"><img class="h-100" src="images/icon_menu.png" alt="..."></button>
+        <div id="input_up_line" class="input-up-line px-2"></div>
+        <button id="btn_up_line" class="btn-up-line"></button>
+    </div>
+
+    <div class="menu-top-line"></div>
+
+    <div id="podmenu" class="podmenu">
+        <div class="top-line-mobile"></div>
+        <img class="room-icon-kaktus" src="images/kaktus.png" alt="...">
+        <img class="room-icon-balance" src="images/Balance.png" alt="...">
+        <div class="d-flex justify-content-center align-items-center balance" style="font-size: 4.4vh;">
+            <span class="me-bnb">15,0355</span>
+            <span>BNB</span>
+        </div>
+        <div class="d-flex flex-column buttons-room">
+            <a href="dashboard.html" id="btn_dashboard" class="btn-menu">
+                Dashboard
+            </a>
+            <a href="my_room.html" id="btn_room" class="btn-menu">
+                My room
+            </a>
+            <a href="referrals.html" id="btn_bonus" class="btn-active">
+                Referrals
+            </a>
+            <a href="#" id="btn_about" class="btn-menu">
+                About us
+            </a>
+        </div>
+        <div class="menu-bottom-buttons">
+            <button class="btn-poisk" data-bs-toggle="collapse" data-bs-target="#collapseExampletel" aria-expanded="false" aria-controls="collapseExample"></button>
+            <button data-bs-toggle="modal" data-bs-target="#outgame" class="btn-exit"></button>
+        </div>
+        <!-- Modal Poisk -->
+        <div class="collapse" style="position: absolute; top: 77vh; left: -9.8vh;" id="collapseExampletel">
+            <div class="card card-body p-0 modal-image-poisk">
+                Coming soon
+            </div>
+        </div>
+        <a href="#" class="btn_telegram_tel"></a>
+        <a href="#" class="btn_facebook_tel"></a>
+    </div>
+
+    <a href="#" id="btn_telegram" class="btn-telegram"></a>
+    <a href="#" id="btn_facebook" class="btn-facebook"></a>
+
+    <div id="up_line_right" class="up-line-right">
+        <button class="btn-poisk" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
+        <button data-bs-toggle="modal" data-bs-target="#outgame" class="btn-exit"></button>
+    </div>
+
+    <div id="main_div" class="main-div d-flex flex-column">
+        <div class="d-flex flex-column podmain">
+            <span class="main-dashboard">Referrals</span>
+            <div class="d-flex w-100 mt-tel-referrals" style="position: relative;">
+                <div class="main-referrals1">
+                    <div class="list-referrals1">Partners</div>
+                    <div class="podlist-referrals1">2084</div>
+                    <div class="list-referrals1 mt-list-referrals1">Referal payouts</div>
+                    <div class="podlist-referrals1">26.6343 BNB</div>
+                    <div class="list-referrals1 mt-list-referrals1">Missed referal payouts</div>
+                    <div class="podlist-referrals1">0 BNB</div>
+                </div>
+                <div class="main-referrals2">
+                    <div class="head-referrals2">
+                        <img class="imgflower1-referrals2" src="images/imgflower1-referrals2.png" alt="...">
+                        <img class="imgflower2-referrals2" src="images/imgflower2-referrals2.png" alt="...">
+                        <img class="imgflower3-referrals2" src="images/imgflower3-referrals2.png" alt="...">
+                    </div>
+                    <div class="body-referrals2">
+                        <button class="btn-referrals2"></button>
+                    </div>
+                </div>
+                <div class="dashboard-predmodal3 d-none-predmodal3-referrals">
+                    <span class="dashboard-my-referral">My referral</span>
+                    <div class="dashboard-modal3">
+                        <div class="head-dashboard-modal3">
+                            <img class="head-img-dashboard-modal3" src="images/LINK.png" alt="...">
+                        </div>
+                        <div class="body-dashboard-modal3">https://bnbplants/1</div>
+                        <div class="footer-dashboard-modal3">
+                            <button class="btn-dashboard-modal3">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="main-dashboard">Payment history</span>
+            <div class="d-flex flex-column relative-referrals3">
+                <div class="notification">
+                    <span class="text1-notification">bot 0.037 BNB for the fruits of plant number 1. From id 4629</span>
+                    <span class="text2-notification">about 1 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">bot 0.576 BNB for the fruits of plant number 6. From id 3452</span>
+                    <span class="text2-notification">about 1 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">bot 0.751 BNB for the fruits of plant number 8. From id 6936</span>
+                    <span class="text2-notification">about 1 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">bot 0.829 BNB for the fruits of plant number 2. From id 9347</span>
+                    <span class="text2-notification">about 1 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">bot 1.037 BNB for the fruits of plant number 10. From id 9247</span>
+                    <span class="text2-notification">about 1 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">Bought plant number 10</span>
+                    <span class="text2-notification">about 2 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">Bought plant number 9</span>
+                    <span class="text2-notification">about 2 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">Bought plant number 8</span>
+                    <span class="text2-notification">about 2 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">Bought plant number 7</span>
+                    <span class="text2-notification">about 2 hours ago</span>
+                </div>
+                <div class="notification">
+                    <span class="text1-notification">Bought plant number 6</span>
+                    <span class="text2-notification">about 2 hours ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Poisk -->
+    <div class="collapse" style="position: absolute; top: 5.6vh; right: 0.5vw;" id="collapseExample">
+        <div class="card card-body p-0 modal-image-poisk">
+            Coming soon
+        </div>
+    </div>
+
+    <!-- Modal Exit -->
+    <div class="modal fade" id="outgame" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-out-game">
+                <div class="modal-body exit-tel-padding">
+                    <div class="head-modal-exit">
+                        Sign out
+                    </div>
+                    <div class="body-modal-exit">
+                        Are you sure you want <br> to leave the game?
+                    </div>
+                    <div class="footer-modal-exit">
+                        <a href="index.html" class="btn-exit-modal">
+                            <img class="img-success-exit" src="images/bg-success.png" alt="...">
+                            Yes
+                        </a>
+                        <button class="btn-exit-modal" data-bs-dismiss="modal" aria-label="Close">
+                            <img class="img-success-exit" src="images/bg-exit-no.png" alt="...">
+                            No
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="adptivity.js"></script>
+</body>
+</html>

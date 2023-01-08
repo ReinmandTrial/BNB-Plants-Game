@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 24" width="300" height="24">
+	<title>Верхняя панель навигации</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 21px;line-height: 15px;fill: #fffeff;font-family: "OriginalbyBrynda", MinecraftCHMC } 
+	</style>
+	<g id="Верхняя панель навигации">
+		<text id="ACTIVATE YOUR ACCOUNT IN ONE BNB TRANSACTION " style="transform: matrix(.947,0,0,.947,-37.559,.255)" >
+			<tspan x="4.7" y="16" class="t0">ACTIVATE YOUR ACCOUNT IN </tspan>
+			<tspan x="31" y="31" class="t0">ONE BNB TRANSACTION 
+</tspan>
+		</text>
+	</g>
+</svg>

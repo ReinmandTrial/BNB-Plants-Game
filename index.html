@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Main style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <div class="d-flex flex-column align-items-center" style="margin-top: 37vh;">
+        <img class="icon-kaktus" src="images/kaktus.png" alt="...">
+        <button class="btn-start" data-bs-toggle="modal" data-bs-target="#modal_login"></button>
+    </div>
+
+    <div id="bg_up_line" class="bg-up-line py-1 d-none">
+        <input type="text" class="input-up-line px-2">
+        <button class="btn-up-line"></button>
+    </div>
+
+    <div id="bg_down_line" class="bg-down-line d-none"></div>
+
+    <!-- Modal Walet -->
+    <div class="modal fade" id="modal_login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-image-login">
+                <div class="modal-body d-flex flex-column modal-padding-login">
+                    <div class="head-modal">
+                        <img class="img-login" src="images/Login.png" alt="...">
+                    </div>
+                    <div class="row row-cols-3 px-modal mt-modal-row">
+                        <button onclick="show_line()" class="col btn d-flex flex-column mt-walet border-0" data-bs-toggle="modal" data-bs-target="#modal_registr">
+                            <img class="img-fox" src="images/icon_fox.png" alt="...">
+                            <!-- <img class="" src="images/Metamask.png" alt="..."> -->
+                            <span class="mt-auto mx-auto text-fox">Metamask</span>
+                        </button>
+                        <button onclick="show_line()" class="col btn d-flex flex-column mt-walet border-0" data-bs-toggle="modal" data-bs-target="#modal_registr">
+                            <img class="img-walet" src="images/math_wallet.png" alt="...">
+                            <!-- <img class="mt-auto mx-auto text-walet" src="images/Mathwallet.png" alt="..."> -->
+                            <span class="mt-auto mx-auto text-fox">Mathwallet</span>
+                        </button>
+                        <button onclick="show_line()" class="col btn d-flex flex-column px-0 mt-walet border-0" data-bs-toggle="modal" data-bs-target="#modal_registr">
+                            <img class="img-connect" src="images/wallet_connect.png" alt="...">
+                            <!-- <img class="mt-auto mx-auto text-cennect" src="images/WalletConnect.png" alt="..."> -->
+                            <span class="mt-auto mx-auto text-fox">WalletConnect</span>
+                        </button>
+                        <button onclick="show_line()" class="col btn d-flex flex-column px-1 mt-walet border-0" data-bs-toggle="modal" data-bs-target="#modal_registr">
+                            <img class="img-token" src="images/token_pocket.png" alt="...">
+                            <!-- <img class="mt-2 mx-auto text-token" src="images/TokenPocket.png" alt="..."> -->
+                            <span class="mt-auto mx-auto text-fox">TokenPocket</span>
+                        </button>
+                        <button onclick="show_line()" class="col btn d-flex flex-column mt-walet border-0" data-bs-toggle="modal" data-bs-target="#modal_registr">
+                            <img class="img-safe" src="images/safe_pal.png" alt="...">
+                            <!-- <img class="mt-2 mx-auto text-safe" src="images/SafePal.png" alt="..."> -->
+                            <span class="mt-auto mx-auto text-fox">SafePal</span>
+                        </button>
+                        <button onclick="show_line()" class="col btn d-flex flex-column mt-walet border-0" data-bs-toggle="modal" data-bs-target="#modal_registr">
+                            <img class="img-trust" src="images/trust_wallet.png" alt="...">
+                            <!-- <img class="mt-2 mx-auto text-trust" src="images/TrustWallet.png" alt="..."> -->
+                            <span class="mt-auto mx-auto text-fox">TrustWallet</span>
+                        </button>
+                        <button onclick="show_line()" class="col btn d-flex flex-column mt-walet border-0" data-bs-toggle="modal" data-bs-target="#modal_registr">
+                            <img class="img-coin" src="images/coin_98.png" alt="...">
+                            <!-- <img class="mt-2 mx-auto text-coin" src="images/Coin98.png" alt="..."> -->
+                            <span class="mt-auto mx-auto text-fox">Coin98</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registration -->
+    <div class="modal fade" id="modal_registr" onclick="show_line()" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-image-registr">
+                <div class="modal-body d-flex flex-column modal-padding-registr">
+                    <div class="head-modal d-flex flex-column">
+                        <!-- <img class="img-registr" src="images/REGISTRATION.svg" alt="..."> -->
+                        <span class="hero-registr">REGISTRATION</span>
+                        <span class="registr-activate">ACTIVATE YOUR ACCOUNT IN ONE BNB TRANSACTION</span>
+                    </div>
+                    <div class="body-modal">
+                        <div class="text-registr-activate">You take full responsibility for your actions. Interaction with the smart contract agree with the rules of the game, and also understand that blockchain transactions are irrevocable. *All the rules are contained in the smart contract*</div>
+                    </div>
+                    <a href="my_room.html" class="btn-registr">CONFIRM REGISTRATION (0.03 BNB)</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html>

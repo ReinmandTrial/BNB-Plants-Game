@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Main style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg" class="bg-my-room"></div>
+
+    <div id="bg_up_line_room" class="bg-up-line-room py-1">
+        <button id="btn_icon_menu" class="btn btn-icon-menu h-100 py-0" onclick="menu()"><img class="h-100" src="images/icon_menu.png" alt="..."></button>
+        <div id="input_up_line" class="input-up-line px-2"></div>
+        <button id="btn_up_line" class="btn-up-line"></button>
+    </div>
+
+    <div class="menu-top-line"></div>
+
+    <div id="podmenu" class="podmenu">
+        <div class="top-line-mobile"></div>
+        <img class="room-icon-kaktus" src="images/kaktus.png" alt="...">
+        <img class="room-icon-balance" src="images/Balance.png" alt="...">
+        <div class="d-flex justify-content-center align-items-center balance" style="font-size: 4.4vh;padding: 0 1vh;min-width: max-content;">
+            <span class="me-bnb">15,0355</span>
+            <span>BNB</span>
+        </div>
+        <div class="d-flex flex-column buttons-room">
+            <a href="dashboard.html" id="btn_dashboard" class="btn-menu">
+                Dashboard
+            </a>
+            <a href="my_room.html" id="btn_room" class="btn-active">
+                My room
+            </a>
+            <a href="referrals.html" id="btn_bonus" class="btn-menu">
+                Referrals
+            </a>
+            <a href="#" id="btn_about" class="btn-menu">
+                About us
+            </a>
+        </div>
+        <div class="menu-bottom-buttons">
+            <button class="btn-poisk" class="btn-poisk" data-bs-toggle="collapse" data-bs-target="#collapseExampletel" aria-expanded="false" aria-controls="collapseExample"`  ></button>
+            <button class="btn-exit" data-bs-toggle="modal" data-bs-target="#outgame"></button>
+        </div>
+        <!-- Modal Poisk -->
+        <div class="collapse" style="position: absolute; top: 77vh; left: -9.8vh;" id="collapseExampletel">
+            <div class="card card-body p-0 modal-image-poisk">
+                Coming soon
+            </div>
+        </div>
+        <a href="#" class="btn_telegram_tel"></a>
+        <a href="#" class="btn_facebook_tel"></a>
+    </div>
+
+    <a href="#" id="btn_telegram" class="btn-telegram"></a>
+    <a href="#" id="btn_facebook" class="btn-facebook"></a>
+
+    <div id="main_div" class="main-div d-flex flex-column align-items-end">
+        <!-- <div id="active_modal_room" class="active-modal-room bg-active-modal-room1">
+            <div id="head_active_modal_room" class="head-active-modal-room">
+                <span class="flower">Flower 1</span>
+                <div class="d-flex fl-w-100 align-items-center justify-content-center">
+                    <img src="images/sun.png" alt="..." style="margin-right: 1%; height: 100%;">
+                    <span class="flower-bnb">0.05 bnb</span>
+                </div>
+            </div>
+            <div id="list_number" class="list-number">
+                <p class="text-list-number">1</p>
+            </div>
+            <div id="border_text" class="border-text">
+                <img class="img-border-text" src="images/img_border_text.png" alt="...">
+            </div>
+            <div id="one_of_three" class="one-of-three">
+                <span class="text-one-of-three">1 of 3</span>
+            </div>
+            <div id="lable" class="lable">
+                <div class="lable1">
+                    <span class="text-lable">partner bonus</span>
+                </div>
+                <div class="lable2">
+                    <span class="text-lable">fruit profit</span>
+                </div>
+            </div>
+            <div id="group_inputs" class="group-inputs">
+                <div class="input1">
+                    <span class="text-input1">0.032 BNB</span>
+                </div>
+                <div class="input2">
+                    <span class="text-input2">0.032 BNB</span>
+                </div>
+            </div>
+            <div id="div_button" class="div-button">
+                <div class="active-modal-button">
+                    <span class="text-active-modal-button">BOOST!</span>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="active_modal_room" class="active-modal-room bg-active-modal-room2">
+            <div id="head_active_modal_room" class="head-active-modal-room">
+                <span class="flower">Flower 1</span>
+                <div class="d-flex fl-w-100 align-items-center justify-content-center">
+                    <img src="images/sun.png" alt="..." style="margin-right: 1%; height: 100%;">
+                    <span class="flower-bnb">0.05 bnb</span>
+                </div>
+            </div>
+            <div class="text-active-modal-room">The plant is available for purchase</div>
+            <div id="btn_buy" class="div-btn-buy">
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-buy">Buy</button>
+                <!-- <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsesuccess" aria-expanded="false" aria-controls="collapseExample" class="btn-buy">Buy</button> -->
+                <!-- <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsedanger" aria-expanded="false" aria-controls="collapseExample" class="btn-buy">Buy</button> -->
+            </div>
+        </div>
+
+        <!-- <div id="active_modal_room" class="active-modal-room bg-active-modal-room2">
+            <div id="head_active_modal_room" class="head-active-modal-room">
+                <span class="flower">Flower 1</span>
+                <div class="d-flex fl-w-100 align-items-center justify-content-center">
+                    <img src="images/sun.png" alt="..." style="margin-right: 1%; height: 100%;">
+                    <span class="flower-bnb">0.05 bnb</span>
+                </div>
+            </div>
+            <div class="text-active-modal-room">In order to buy this plant, you need to purchase the previous one</div>
+            <div id="btn_buy" class="div-btn-available">
+                <button class="btn-available">Not available</button>
+            </div>
+        </div> -->
+
+        <div class="d-flex-tel">     
+            <div class="box-buttons mt-box1" id="box_buttons1">
+                <div class="buttons-20 button-purple" data-bs-toggle="modal" data-bs-target="#onelevel">
+                    <img class="img-buttons" src="images/1.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/2.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/3.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/4.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/5.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/6.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/7.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/8.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/9.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/10.png" alt="...">
+                </div>
+                <!-- <div class="buttons-20 active-button-green">
+                    <img class="img-buttons" src="images/1.png" alt="...">
+                </div>
+                <div class="buttons-20 button-red">
+                    <img class="img-buttons" src="images/2.png" alt="...">
+                </div>
+                <div class="buttons-20 button-green">
+                    <img class="img-buttons" src="images/3.png" alt="...">
+                </div>
+                <div class="buttons-20 button-green">
+                    <img class="img-buttons" src="images/4.png" alt="...">
+                </div>
+                <div class="buttons-20 button-green">
+                    <img class="img-buttons" src="images/5.png" alt="...">
+                </div>
+                <div class="buttons-20 button-red">
+                    <img class="img-buttons" src="images/6.png" alt="...">
+                </div>
+                <div class="buttons-20 button-green">
+                    <img class="img-buttons" src="images/7.png" alt="...">
+                </div>
+                <div class="buttons-20 button-green">
+                    <img class="img-buttons" src="images/8.png" alt="...">
+                </div>
+                <div class="buttons-20 button-red">
+                    <img class="img-buttons" src="images/9.png" alt="...">
+                </div>
+                <div class="buttons-20 button-green">
+                    <img class="img-buttons" src="images/10.png" alt="...">
+                </div> -->
+            </div>
+            <div class="box-buttons mt-box2" id="box_buttons2">
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/11.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/12.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/13.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/14.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/15.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/16.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/17.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/18.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/19.png" alt="...">
+                </div>
+                <div class="buttons-20 button-purple">
+                    <img class="img-buttons" src="images/20.png" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="up_line_right" class="up-line-right">
+        <button class="btn-poisk" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
+        <button data-bs-toggle="modal" data-bs-target="#outgame" class="btn-exit"></button>
+    </div>
+
+    <!-- <img id="flower" class="flower-absolute" src="images/flower1.png" alt="..."> -->
+
+
+    <!-- Modal Poisk -->
+    <div class="collapse" style="position: absolute; top: 5.6vh; right: 0.5vw;" id="collapseExample">
+        <div class="card card-body p-0 modal-image-poisk">
+            Coming soon
+        </div>
+    </div>
+
+    
+    <!-- Modal Ожидание -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog m-modal-white">
+            <div class="modal-content modal-bg-white mx-auto">
+                <div class="modal-body text-center p-modal-white">
+                    <span>
+                        <img class="sun-modal" src="images/sun-modal.png" alt="...">
+                        Waiting for transaction <br> complete
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Success -->
+    <div class="collapse" style="position: fixed; top: 0px; width: 100%; z-index: 150;" id="collapsesuccess">
+        <div class="card card-body p-modal-white modal-bg-white text-center mx-auto">
+            <span>
+                <img class="sun-modal" src="images/bg-success.png" alt="...">
+                You've successfully <br> purchased a plant
+            </span>
+        </div>
+    </div>
+
+    <!-- Modal Danger -->
+    <div class="collapse" style="position: fixed; top: 0px; width: 100%; z-index: 150;" id="collapsedanger">
+        <div class="card card-body p-modal-white modal-bg-white text-center mx-auto">
+            <span>
+                <img class="sun-modal" src="images/bg-exit-no.png" alt="...">
+                failed to make the <br> payment
+            </span>
+        </div>
+    </div>
+
+    <!-- Modal Exit -->
+    <div class="modal fade" id="outgame" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-out-game">
+                <div class="modal-body exit-tel-padding">
+                    <div class="head-modal-exit">
+                        Sign out
+                    </div>
+                    <div class="body-modal-exit">
+                        Are you sure you want <br> to leave the game?
+                    </div>
+                    <div class="footer-modal-exit">
+                        <a href="index.html" class="btn-exit-modal">
+                            <img class="img-success-exit" src="images/bg-success.png" alt="...">
+                            Yes
+                        </a>
+                        <button class="btn-exit-modal" data-bs-dismiss="modal" aria-label="Close">
+                            <img class="img-success-exit" src="images/bg-exit-no.png" alt="...">
+                            No
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- Modal Level -->
+    <div class="modal fade" id="onelevel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-out-game">
+                <div class="modal-body exit-tel-padding">
+                    <div class="head-modal-exit">
+                        Level 1
+                    </div>
+                    <div class="body-modal-exit">
+                        Buy this plant for 0.03 BNB?
+                    </div>
+                    <div class="footer-modal-level">
+                        <button class="btn-level-modal btn-level1" data-bs-dismiss="modal" aria-label="Close">
+                            Cancel
+                        </button>
+                        <button class="btn-level-modal btn-level2" data-bs-dismiss="modal" aria-label="Close">
+                            Buy
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+      
+    <script>
+        var height_active_modal = document.getElementById('main_div').offsetHeight/1.76885714
+        var width_active_modal = document.getElementById('main_div').offsetHeight/1.96539683
+        var mt_active_modal = document.getElementById('main_div').offsetHeight/7.74375
+        document.getElementById('active_modal_room').style.setProperty('--height-active-modal', height_active_modal + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--width-active-modal', width_active_modal + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--mt-active-modal', mt_active_modal + 'px')
+        var mr_buttons = document.getElementById('main_div').offsetHeight/15.4875
+        var width_buttons = document.getElementById('main_div').offsetHeight/1.35557987
+        var height_buttons = document.getElementById('main_div').offsetHeight/14.75
+        var mt_box2 = document.getElementById('main_div').offsetHeight/137.666667
+        document.getElementById('box_buttons1').style.setProperty('--mr-buttons', mr_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--mr-buttons', mr_buttons + 'px')
+        document.getElementById('box_buttons1').style.setProperty('--width-buttons', width_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--width-buttons', width_buttons + 'px')
+        document.getElementById('box_buttons1').style.setProperty('--height-buttons', height_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--height-buttons', height_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--mt-box2', mt_box2 + 'px')
+        var mr_active_modal = ((width_buttons-width_active_modal)/2)+mr_buttons
+        document.getElementById('active_modal_room').style.setProperty('--mr-active-modal', mr_active_modal + 'px')
+        var mt_box1 = document.getElementById('main_div').offsetHeight/10.325
+        document.getElementById('box_buttons1').style.setProperty('--mt-box1', mt_box1 + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--mt-box1', mt_box1 + 'px')
+        var pt_active_modal = document.getElementById('main_div').offsetHeight/20.65
+        var pr_active_modal = document.getElementById('main_div').offsetHeight/18
+        document.getElementById('active_modal_room').style.setProperty('--pt-active-modal', pt_active_modal + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--pl-active-modal', mr_buttons + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--pr-active-modal', pr_active_modal + 'px')
+        var height_head_active_modal = document.getElementById('main_div').offsetHeight/10.0895765
+        document.getElementById('head_active_modal_room').style.setProperty('--height-head-active-modal', height_head_active_modal + 'px')
+        if(document.getElementById('list_number') != null) {
+            var height_list_number = document.getElementById('main_div').offsetHeight/16.9262295
+            document.getElementById('list_number').style.setProperty('--height-list-number', height_list_number + 'px')
+            var height_border_text = document.getElementById('main_div').offsetHeight/61.95
+            document.getElementById('border_text').style.setProperty('--height-border-text', height_border_text + 'px')
+            var mt_border_text = document.getElementById('main_div').offsetHeight/77.4375
+            document.getElementById('border_text').style.setProperty('--mt-border-text', mt_border_text + 'px')
+            var height_one_of_three = document.getElementById('main_div').offsetHeight/11.2636364
+            document.getElementById('one_of_three').style.setProperty('--height-one-of-three', height_one_of_three + 'px')
+            var height_lable = document.getElementById('main_div').offsetHeight/44
+            var mt_lable = document.getElementById('main_div').offsetHeight/33.1283422
+            document.getElementById('lable').style.setProperty('--height-lable', height_lable + 'px')
+            document.getElementById('lable').style.setProperty('--mt-lable', mt_lable + 'px')
+            var height_group_inputs = document.getElementById('main_div').offsetHeight/33.857
+            document.getElementById('group_inputs').style.setProperty('--height-group-inputs', height_group_inputs + 'px')
+            var height_div_button = document.getElementById('main_div').offsetHeight/24.1992188
+            var mt_div_button = document.getElementById('main_div').offsetHeight/42.7241379
+            document.getElementById('div_button').style.setProperty('--height-div-button', height_div_button + 'px')
+            document.getElementById('div_button').style.setProperty('--mt-div-button', mt_div_button + 'px')
+            var flower_bottom = window.screen.width/16.6666667
+            document.getElementById('flower').style.setProperty('--flower-bottom', flower_bottom + 'px')
+        }
+        var width_buttons_tel = document.getElementById('main_div').offsetHeight/1.70877778
+        var height_buttons_Tel = document.getElementById('main_div').offsetHeight/18.754878
+        document.getElementById('box_buttons1').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
+        document.getElementById('box_buttons1').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
+        if(document.getElementById('btn_buy') != null) {
+            var hight_btn_buy = document.getElementById('main_div').offsetHeight/21
+            document.getElementById('btn_buy').style.setProperty('--height-btn-buy', hight_btn_buy + 'px')
+        }
+
+
+    window.addEventListener('resize', function(event) {
+        var height_active_modal = document.getElementById('main_div').offsetHeight/1.76885714
+        var width_active_modal = document.getElementById('main_div').offsetHeight/1.96539683
+        var mt_active_modal = document.getElementById('main_div').offsetHeight/7.74375
+        document.getElementById('active_modal_room').style.setProperty('--height-active-modal', height_active_modal + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--width-active-modal', width_active_modal + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--mt-active-modal', mt_active_modal + 'px')
+        var mr_buttons = document.getElementById('main_div').offsetHeight/15.4875
+        var width_buttons = document.getElementById('main_div').offsetHeight/1.35557987
+        var height_buttons = document.getElementById('main_div').offsetHeight/14.75
+        var mt_box2 = document.getElementById('main_div').offsetHeight/137.666667
+        document.getElementById('box_buttons1').style.setProperty('--mr-buttons', mr_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--mr-buttons', mr_buttons + 'px')
+        document.getElementById('box_buttons1').style.setProperty('--width-buttons', width_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--width-buttons', width_buttons + 'px')
+        document.getElementById('box_buttons1').style.setProperty('--height-buttons', height_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--height-buttons', height_buttons + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--mt-box2', mt_box2 + 'px')
+        var mr_active_modal = ((width_buttons-width_active_modal)/2)+mr_buttons
+        document.getElementById('active_modal_room').style.setProperty('--mr-active-modal', mr_active_modal + 'px')
+        var mt_box1 = document.getElementById('main_div').offsetHeight/10.325
+        document.getElementById('box_buttons1').style.setProperty('--mt-box1', mt_box1 + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--mt-box1', mt_box1 + 'px')
+        var pt_active_modal = document.getElementById('main_div').offsetHeight/20.65
+        var pr_active_modal = document.getElementById('main_div').offsetHeight/18
+        document.getElementById('active_modal_room').style.setProperty('--pt-active-modal', pt_active_modal + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--pl-active-modal', mr_buttons + 'px')
+        document.getElementById('active_modal_room').style.setProperty('--pr-active-modal', pr_active_modal + 'px')
+        var height_head_active_modal = document.getElementById('main_div').offsetHeight/10.0895765
+        document.getElementById('head_active_modal_room').style.setProperty('--height-head-active-modal', height_head_active_modal + 'px')
+        if(document.getElementById('list_number') != null) {
+            var height_list_number = document.getElementById('main_div').offsetHeight/16.9262295
+            document.getElementById('list_number').style.setProperty('--height-list-number', height_list_number + 'px')
+            var height_border_text = document.getElementById('main_div').offsetHeight/61.95
+            document.getElementById('border_text').style.setProperty('--height-border-text', height_border_text + 'px')
+            var mt_border_text = document.getElementById('main_div').offsetHeight/77.4375
+            document.getElementById('border_text').style.setProperty('--mt-border-text', mt_border_text + 'px')
+            var height_one_of_three = document.getElementById('main_div').offsetHeight/11.2636364
+            document.getElementById('one_of_three').style.setProperty('--height-one-of-three', height_one_of_three + 'px')
+            var height_lable = document.getElementById('main_div').offsetHeight/44
+            var mt_lable = document.getElementById('main_div').offsetHeight/33.1283422
+            document.getElementById('lable').style.setProperty('--height-lable', height_lable + 'px')
+            document.getElementById('lable').style.setProperty('--mt-lable', mt_lable + 'px')
+            var height_group_inputs = document.getElementById('main_div').offsetHeight/33.857
+            document.getElementById('group_inputs').style.setProperty('--height-group-inputs', height_group_inputs + 'px')
+            var height_div_button = document.getElementById('main_div').offsetHeight/24.1992188
+            var mt_div_button = document.getElementById('main_div').offsetHeight/42.7241379
+            document.getElementById('div_button').style.setProperty('--height-div-button', height_div_button + 'px')
+            document.getElementById('div_button').style.setProperty('--mt-div-button', mt_div_button + 'px')
+        }
+        var width_buttons_tel = document.getElementById('main_div').offsetHeight/1.70877778
+        var height_buttons_Tel = document.getElementById('main_div').offsetHeight/18.754878
+        document.getElementById('box_buttons1').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
+        document.getElementById('box_buttons1').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
+        document.getElementById('box_buttons2').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
+        if(document.getElementById('btn_buy') != null) {
+            var hight_btn_buy = document.getElementById('main_div').offsetHeight/21
+            document.getElementById('btn_buy').style.setProperty('--height-btn-buy', hight_btn_buy + 'px')
+        }
+    }, true);
+    </script>
+    <script src="script.js"></script>
+    <script src="adptivity.js"></script>
+</body>
+</html>
