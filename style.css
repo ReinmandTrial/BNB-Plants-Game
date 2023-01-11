@@ -5,7 +5,7 @@
 .body {
     overflow: hidden;
     margin: 0px;
-    background-image: url("images/bg_start.png");
+    background-image: url("images/bg_start.jpg");
     background-size: cover;
     background-position: left;
     height: 100vh;
@@ -167,7 +167,7 @@
 }
 .btn-registr {
     margin: auto auto 20px auto;
-    background-image: url("images/btn_registration.png");
+    background-image: url("images/btn_registration.jpg");
     background-size: 100%;
     background-position: center;
     border: none;
@@ -269,7 +269,7 @@
 .btn-menu {
     width: 70%;
     height: 15%;
-    background-image: url("images/btn-menu.png");
+    background-image: url("images/btn-menu.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -288,7 +288,7 @@
 .btn-active {
     width: 70%;
     height: 15%;
-    background-image: url("images/btn-active-menu.png");
+    background-image: url("images/btn-active-menu.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -387,7 +387,7 @@
     align-items: center;
     justify-content: center;
     border: none;
-    background-image: url("images/btn-buy.png");
+    background-image: url("images/btn-buy.jpg");
     background-size: cover;
 }
 .btn-available {
@@ -400,7 +400,7 @@
     align-items: center;
     justify-content: center;
     border: none;
-    background-image: url("images/bg-available.png");
+    background-image: url("images/bg-available.jpg");
     background-size: cover;
 }
 .box-buttons {
@@ -423,16 +423,16 @@
     height: 45%;
 }
 .button-green {
-    background-image: url("images/button_green.png");
+    background-image: url("images/button_green.jpg");
 }
 .button-red {
-    background-image: url("images/button_red.png");
+    background-image: url("images/button_red.jpg");
 }
 .active-button-green {
     background-image: url("images/active_button_green.png");
 }
 .button-purple {
-    background-image: url("images/button_purple.png");
+    background-image: url("images/button_purple.jpg");
 }
 .mt-box2 {
     margin-top: var(--mt-box2);
@@ -931,7 +931,7 @@
 .modal-out-game {
     background-color: #fffeff00;
     border: none;
-    background-image: url("images/bg-out-game.png");
+    background-image: url("images/bg-out-game.jpg");
     background-size: cover;
     border-radius: 0px;
     width: 500px;
@@ -1000,13 +1000,13 @@
     height: 35px;
 }
 .btn-level1 {
-    background-image: url("images/btn-level-cancel.png");
+    background-image: url("images/btn-level-cancel.jpg");
     background-size: cover;
     width: 154px;
     margin-right: 25px;
 }
 .btn-level2 {
-    background-image: url("images/btn-level-buy.png");
+    background-image: url("images/btn-level-buy.jpg");
     background-size: cover;
     width: 105px;
     margin-right: 15px;
@@ -1049,7 +1049,8 @@
         z-index: 100;
     }
     .podmenu {
-        background-image: url("images/bg_podmenu.png");
+        /* background-image: url("images/bg_podmenu.png"); */
+        background-image: url("images/bg_podmenu.svg");
         background-size: cover;
         background-position: bottom;
         height: 100vh;
@@ -1075,8 +1076,9 @@
         height: 8.7%;
         position: absolute;
         left: 20%;
-        bottom: 4.2%;
+        bottom: 3.9%;
         border-radius: 50%;
+        background: url("images/tg.png") center/contain no-repeat;
     }
     .btn_facebook_tel {
         display: block;
@@ -1084,8 +1086,9 @@
         height: 8.7%;
         position: absolute;
         left: 52.8%;
-        bottom: 4.2%;
+        bottom: 3.9%;
         border-radius: 50%;
+        background: url("images/tw.png") center/contain no-repeat;
     }
     .menu-bottom-buttons {
         background-image: url("images/up_line_right.png");
@@ -1743,5 +1746,19 @@
     .text-fox {
         font-size: 2.2vw;
         height: 4.5vw;
+    }
+}
+
+.login-title {
+    margin: auto auto auto auto;
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 46pt;
+    line-height: 36px;
+}
+
+@media (max-width: 575.98px) {
+    .login-title {
+        font-size: 10.9vw;
     }
 }
