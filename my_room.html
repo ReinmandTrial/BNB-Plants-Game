@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <!-- Main style -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="bg" class="bg-my-room"></div>
 
     <div id="bg_up_line_room" class="bg-up-line-room py-1">
-        <button id="btn_icon_menu" class="btn btn-icon-menu h-100 py-0" onclick="menu()"><img class="h-100" src="images/icon_menu.png" alt="..."></button>
+        <button id="btn_icon_menu" class="btn btn-icon-menu h-100 py-0" onclick="menu()"><img class="h-100"
+                src="images/icon_menu.png" alt="..."></button>
         <div id="input_up_line" class="input-up-line px-2"></div>
         <button id="btn_up_line" class="btn-up-line"></button>
     </div>
 
     <div class="menu-top-line"></div>
 
-    <div id="podmenu" class="podmenu">
-        <div class="top-line-mobile"></div>
-        <img class="room-icon-kaktus" src="images/kaktus.png" alt="...">
-        <img class="room-icon-balance" src="images/Balance.png" alt="...">
-        <div class="d-flex justify-content-center align-items-center balance" style="font-size: 4.4vh;padding: 0 1vh;min-width: max-content;">
-            <span class="me-bnb">15,0355</span>
-            <span>BNB</span>
-        </div>
-        <div class="d-flex flex-column buttons-room">
-            <a href="dashboard.html" id="btn_dashboard" class="btn-menu">
-                Dashboard
-            </a>
-            <a href="my_room.html" id="btn_room" class="btn-active">
-                My room
-            </a>
-            <a href="referrals.html" id="btn_bonus" class="btn-menu">
-                Referrals
-            </a>
-            <a href="#" id="btn_about" class="btn-menu">
-                About us
-            </a>
-        </div>
-        <div class="menu-bottom-buttons">
-            <button class="btn-poisk" class="btn-poisk" data-bs-toggle="collapse" data-bs-target="#collapseExampletel" aria-expanded="false" aria-controls="collapseExample"`  ></button>
-            <button class="btn-exit" data-bs-toggle="modal" data-bs-target="#outgame"></button>
-        </div>
-        <!-- Modal Poisk -->
-        <div class="collapse" style="position: absolute; top: 77vh; left: -9.8vh;" id="collapseExampletel">
-            <div class="card card-body p-0 modal-image-poisk">
-                Coming soon
+    <div class="podmenu__block">
+        <div id="podmenu" class="podmenu">
+            <div class="podmenu__content">
+
+                <div class="top-line-mobile"></div>
+                <img class="room-icon-kaktus" src="images/kaktus.png" alt="...">
+                <!-- <img class="room-icon-balance" src="images/Balance.png" alt="..."> -->
+                <p class="logo-title">Balance:</p>
+                <div class="d-flex justify-content-center align-items-center balance"
+                    style="font-size: 4.4vh;padding: 0 1vh;min-width: max-content;">
+                    <span class="me-bnb">15,0355</span>
+                    <span>BNB</span>
+                </div>
+                <div class="d-flex flex-column buttons-room">
+                    <a href="dashboard.html" id="btn_dashboard" class="btn-menu">
+                        Dashboard
+                    </a>
+                    <a href="my_room.html" id="btn_room" class="btn-active">
+                        My room
+                    </a>
+                    <a href="referrals.html" id="btn_bonus" class="btn-menu">
+                        Referrals
+                    </a>
+                    <a href="#" id="btn_about" class="btn-menu">
+                        About us
+                    </a>
+                </div>
+                <div class="menu-bottom-buttons">
+                    <button class="btn-poisk" class="btn-poisk" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExampletel" aria-expanded="false" aria-controls="collapseExample"
+                        `></button>
+                    <button class="btn-exit" data-bs-toggle="modal" data-bs-target="#outgame"></button>
+                </div>
+                <!-- Modal Poisk -->
+                <div class="collapse" style="position: absolute; top: 77vh; left: -9.8vh;" id="collapseExampletel">
+                    <div class="card card-body p-0 modal-image-poisk">
+                        Coming soon
+                    </div>
+                </div>
+
+                <div class="btns-block">
+                    <a href="#" class="btn_telegram_tel"></a>
+                    <a href="#" class="btn_facebook_tel"></a>
+                </div>
             </div>
         </div>
-        <a href="#" class="btn_telegram_tel"></a>
-        <a href="#" class="btn_facebook_tel"></a>
     </div>
-
     <a href="#" id="btn_telegram" class="btn-telegram"></a>
     <a href="#" id="btn_facebook" class="btn-facebook"></a>
 
@@ -132,7 +149,7 @@
             </div>
         </div> -->
 
-        <div class="d-flex-tel">     
+        <div class="d-flex-tel">
             <div class="box-buttons mt-box1" id="box_buttons1">
                 <div class="buttons-20 button-purple" data-bs-toggle="modal" data-bs-target="#onelevel">
                     <img class="img-buttons" src="images/1.png" alt="...">
@@ -231,7 +248,8 @@
     </div>
 
     <div id="up_line_right" class="up-line-right">
-        <button class="btn-poisk" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
+        <button class="btn-poisk" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+            aria-controls="collapseExample"></button>
         <button data-bs-toggle="modal" data-bs-target="#outgame" class="btn-exit"></button>
     </div>
 
@@ -245,7 +263,7 @@
         </div>
     </div>
 
-    
+
     <!-- Modal Ожидание -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog m-modal-white">
@@ -303,7 +321,7 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     </div>
 
     <!-- Modal Level -->
@@ -327,21 +345,21 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     </div>
 
-      
+
     <script>
-        var height_active_modal = document.getElementById('main_div').offsetHeight/1.76885714
-        var width_active_modal = document.getElementById('main_div').offsetHeight/1.96539683
-        var mt_active_modal = document.getElementById('main_div').offsetHeight/7.74375
+        var height_active_modal = document.getElementById('main_div').offsetHeight / 1.76885714
+        var width_active_modal = document.getElementById('main_div').offsetHeight / 1.96539683
+        var mt_active_modal = document.getElementById('main_div').offsetHeight / 7.74375
         document.getElementById('active_modal_room').style.setProperty('--height-active-modal', height_active_modal + 'px')
         document.getElementById('active_modal_room').style.setProperty('--width-active-modal', width_active_modal + 'px')
         document.getElementById('active_modal_room').style.setProperty('--mt-active-modal', mt_active_modal + 'px')
-        var mr_buttons = document.getElementById('main_div').offsetHeight/15.4875
-        var width_buttons = document.getElementById('main_div').offsetHeight/1.35557987
-        var height_buttons = document.getElementById('main_div').offsetHeight/14.75
-        var mt_box2 = document.getElementById('main_div').offsetHeight/137.666667
+        var mr_buttons = document.getElementById('main_div').offsetHeight / 15.4875
+        var width_buttons = document.getElementById('main_div').offsetHeight / 1.35557987
+        var height_buttons = document.getElementById('main_div').offsetHeight / 14.75
+        var mt_box2 = document.getElementById('main_div').offsetHeight / 137.666667
         document.getElementById('box_buttons1').style.setProperty('--mr-buttons', mr_buttons + 'px')
         document.getElementById('box_buttons2').style.setProperty('--mr-buttons', mr_buttons + 'px')
         document.getElementById('box_buttons1').style.setProperty('--width-buttons', width_buttons + 'px')
@@ -349,115 +367,116 @@
         document.getElementById('box_buttons1').style.setProperty('--height-buttons', height_buttons + 'px')
         document.getElementById('box_buttons2').style.setProperty('--height-buttons', height_buttons + 'px')
         document.getElementById('box_buttons2').style.setProperty('--mt-box2', mt_box2 + 'px')
-        var mr_active_modal = ((width_buttons-width_active_modal)/2)+mr_buttons
+        var mr_active_modal = ((width_buttons - width_active_modal) / 2) + mr_buttons
         document.getElementById('active_modal_room').style.setProperty('--mr-active-modal', mr_active_modal + 'px')
-        var mt_box1 = document.getElementById('main_div').offsetHeight/10.325
+        var mt_box1 = document.getElementById('main_div').offsetHeight / 10.325
         document.getElementById('box_buttons1').style.setProperty('--mt-box1', mt_box1 + 'px')
         document.getElementById('box_buttons2').style.setProperty('--mt-box1', mt_box1 + 'px')
-        var pt_active_modal = document.getElementById('main_div').offsetHeight/20.65
-        var pr_active_modal = document.getElementById('main_div').offsetHeight/18
+        var pt_active_modal = document.getElementById('main_div').offsetHeight / 20.65
+        var pr_active_modal = document.getElementById('main_div').offsetHeight / 18
         document.getElementById('active_modal_room').style.setProperty('--pt-active-modal', pt_active_modal + 'px')
         document.getElementById('active_modal_room').style.setProperty('--pl-active-modal', mr_buttons + 'px')
         document.getElementById('active_modal_room').style.setProperty('--pr-active-modal', pr_active_modal + 'px')
-        var height_head_active_modal = document.getElementById('main_div').offsetHeight/10.0895765
+        var height_head_active_modal = document.getElementById('main_div').offsetHeight / 10.0895765
         document.getElementById('head_active_modal_room').style.setProperty('--height-head-active-modal', height_head_active_modal + 'px')
-        if(document.getElementById('list_number') != null) {
-            var height_list_number = document.getElementById('main_div').offsetHeight/16.9262295
+        if (document.getElementById('list_number') != null) {
+            var height_list_number = document.getElementById('main_div').offsetHeight / 16.9262295
             document.getElementById('list_number').style.setProperty('--height-list-number', height_list_number + 'px')
-            var height_border_text = document.getElementById('main_div').offsetHeight/61.95
+            var height_border_text = document.getElementById('main_div').offsetHeight / 61.95
             document.getElementById('border_text').style.setProperty('--height-border-text', height_border_text + 'px')
-            var mt_border_text = document.getElementById('main_div').offsetHeight/77.4375
+            var mt_border_text = document.getElementById('main_div').offsetHeight / 77.4375
             document.getElementById('border_text').style.setProperty('--mt-border-text', mt_border_text + 'px')
-            var height_one_of_three = document.getElementById('main_div').offsetHeight/11.2636364
+            var height_one_of_three = document.getElementById('main_div').offsetHeight / 11.2636364
             document.getElementById('one_of_three').style.setProperty('--height-one-of-three', height_one_of_three + 'px')
-            var height_lable = document.getElementById('main_div').offsetHeight/44
-            var mt_lable = document.getElementById('main_div').offsetHeight/33.1283422
+            var height_lable = document.getElementById('main_div').offsetHeight / 44
+            var mt_lable = document.getElementById('main_div').offsetHeight / 33.1283422
             document.getElementById('lable').style.setProperty('--height-lable', height_lable + 'px')
             document.getElementById('lable').style.setProperty('--mt-lable', mt_lable + 'px')
-            var height_group_inputs = document.getElementById('main_div').offsetHeight/33.857
+            var height_group_inputs = document.getElementById('main_div').offsetHeight / 33.857
             document.getElementById('group_inputs').style.setProperty('--height-group-inputs', height_group_inputs + 'px')
-            var height_div_button = document.getElementById('main_div').offsetHeight/24.1992188
-            var mt_div_button = document.getElementById('main_div').offsetHeight/42.7241379
+            var height_div_button = document.getElementById('main_div').offsetHeight / 24.1992188
+            var mt_div_button = document.getElementById('main_div').offsetHeight / 42.7241379
             document.getElementById('div_button').style.setProperty('--height-div-button', height_div_button + 'px')
             document.getElementById('div_button').style.setProperty('--mt-div-button', mt_div_button + 'px')
-            var flower_bottom = window.screen.width/16.6666667
+            var flower_bottom = window.screen.width / 16.6666667
             document.getElementById('flower').style.setProperty('--flower-bottom', flower_bottom + 'px')
         }
-        var width_buttons_tel = document.getElementById('main_div').offsetHeight/1.70877778
-        var height_buttons_Tel = document.getElementById('main_div').offsetHeight/18.754878
+        var width_buttons_tel = document.getElementById('main_div').offsetHeight / 1.70877778
+        var height_buttons_Tel = document.getElementById('main_div').offsetHeight / 18.754878
         document.getElementById('box_buttons1').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
         document.getElementById('box_buttons2').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
         document.getElementById('box_buttons1').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
         document.getElementById('box_buttons2').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
-        if(document.getElementById('btn_buy') != null) {
-            var hight_btn_buy = document.getElementById('main_div').offsetHeight/21
+        if (document.getElementById('btn_buy') != null) {
+            var hight_btn_buy = document.getElementById('main_div').offsetHeight / 21
             document.getElementById('btn_buy').style.setProperty('--height-btn-buy', hight_btn_buy + 'px')
         }
 
 
-    window.addEventListener('resize', function(event) {
-        var height_active_modal = document.getElementById('main_div').offsetHeight/1.76885714
-        var width_active_modal = document.getElementById('main_div').offsetHeight/1.96539683
-        var mt_active_modal = document.getElementById('main_div').offsetHeight/7.74375
-        document.getElementById('active_modal_room').style.setProperty('--height-active-modal', height_active_modal + 'px')
-        document.getElementById('active_modal_room').style.setProperty('--width-active-modal', width_active_modal + 'px')
-        document.getElementById('active_modal_room').style.setProperty('--mt-active-modal', mt_active_modal + 'px')
-        var mr_buttons = document.getElementById('main_div').offsetHeight/15.4875
-        var width_buttons = document.getElementById('main_div').offsetHeight/1.35557987
-        var height_buttons = document.getElementById('main_div').offsetHeight/14.75
-        var mt_box2 = document.getElementById('main_div').offsetHeight/137.666667
-        document.getElementById('box_buttons1').style.setProperty('--mr-buttons', mr_buttons + 'px')
-        document.getElementById('box_buttons2').style.setProperty('--mr-buttons', mr_buttons + 'px')
-        document.getElementById('box_buttons1').style.setProperty('--width-buttons', width_buttons + 'px')
-        document.getElementById('box_buttons2').style.setProperty('--width-buttons', width_buttons + 'px')
-        document.getElementById('box_buttons1').style.setProperty('--height-buttons', height_buttons + 'px')
-        document.getElementById('box_buttons2').style.setProperty('--height-buttons', height_buttons + 'px')
-        document.getElementById('box_buttons2').style.setProperty('--mt-box2', mt_box2 + 'px')
-        var mr_active_modal = ((width_buttons-width_active_modal)/2)+mr_buttons
-        document.getElementById('active_modal_room').style.setProperty('--mr-active-modal', mr_active_modal + 'px')
-        var mt_box1 = document.getElementById('main_div').offsetHeight/10.325
-        document.getElementById('box_buttons1').style.setProperty('--mt-box1', mt_box1 + 'px')
-        document.getElementById('box_buttons2').style.setProperty('--mt-box1', mt_box1 + 'px')
-        var pt_active_modal = document.getElementById('main_div').offsetHeight/20.65
-        var pr_active_modal = document.getElementById('main_div').offsetHeight/18
-        document.getElementById('active_modal_room').style.setProperty('--pt-active-modal', pt_active_modal + 'px')
-        document.getElementById('active_modal_room').style.setProperty('--pl-active-modal', mr_buttons + 'px')
-        document.getElementById('active_modal_room').style.setProperty('--pr-active-modal', pr_active_modal + 'px')
-        var height_head_active_modal = document.getElementById('main_div').offsetHeight/10.0895765
-        document.getElementById('head_active_modal_room').style.setProperty('--height-head-active-modal', height_head_active_modal + 'px')
-        if(document.getElementById('list_number') != null) {
-            var height_list_number = document.getElementById('main_div').offsetHeight/16.9262295
-            document.getElementById('list_number').style.setProperty('--height-list-number', height_list_number + 'px')
-            var height_border_text = document.getElementById('main_div').offsetHeight/61.95
-            document.getElementById('border_text').style.setProperty('--height-border-text', height_border_text + 'px')
-            var mt_border_text = document.getElementById('main_div').offsetHeight/77.4375
-            document.getElementById('border_text').style.setProperty('--mt-border-text', mt_border_text + 'px')
-            var height_one_of_three = document.getElementById('main_div').offsetHeight/11.2636364
-            document.getElementById('one_of_three').style.setProperty('--height-one-of-three', height_one_of_three + 'px')
-            var height_lable = document.getElementById('main_div').offsetHeight/44
-            var mt_lable = document.getElementById('main_div').offsetHeight/33.1283422
-            document.getElementById('lable').style.setProperty('--height-lable', height_lable + 'px')
-            document.getElementById('lable').style.setProperty('--mt-lable', mt_lable + 'px')
-            var height_group_inputs = document.getElementById('main_div').offsetHeight/33.857
-            document.getElementById('group_inputs').style.setProperty('--height-group-inputs', height_group_inputs + 'px')
-            var height_div_button = document.getElementById('main_div').offsetHeight/24.1992188
-            var mt_div_button = document.getElementById('main_div').offsetHeight/42.7241379
-            document.getElementById('div_button').style.setProperty('--height-div-button', height_div_button + 'px')
-            document.getElementById('div_button').style.setProperty('--mt-div-button', mt_div_button + 'px')
-        }
-        var width_buttons_tel = document.getElementById('main_div').offsetHeight/1.70877778
-        var height_buttons_Tel = document.getElementById('main_div').offsetHeight/18.754878
-        document.getElementById('box_buttons1').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
-        document.getElementById('box_buttons2').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
-        document.getElementById('box_buttons1').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
-        document.getElementById('box_buttons2').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
-        if(document.getElementById('btn_buy') != null) {
-            var hight_btn_buy = document.getElementById('main_div').offsetHeight/21
-            document.getElementById('btn_buy').style.setProperty('--height-btn-buy', hight_btn_buy + 'px')
-        }
-    }, true);
+        window.addEventListener('resize', function (event) {
+            var height_active_modal = document.getElementById('main_div').offsetHeight / 1.76885714
+            var width_active_modal = document.getElementById('main_div').offsetHeight / 1.96539683
+            var mt_active_modal = document.getElementById('main_div').offsetHeight / 7.74375
+            document.getElementById('active_modal_room').style.setProperty('--height-active-modal', height_active_modal + 'px')
+            document.getElementById('active_modal_room').style.setProperty('--width-active-modal', width_active_modal + 'px')
+            document.getElementById('active_modal_room').style.setProperty('--mt-active-modal', mt_active_modal + 'px')
+            var mr_buttons = document.getElementById('main_div').offsetHeight / 15.4875
+            var width_buttons = document.getElementById('main_div').offsetHeight / 1.35557987
+            var height_buttons = document.getElementById('main_div').offsetHeight / 14.75
+            var mt_box2 = document.getElementById('main_div').offsetHeight / 137.666667
+            document.getElementById('box_buttons1').style.setProperty('--mr-buttons', mr_buttons + 'px')
+            document.getElementById('box_buttons2').style.setProperty('--mr-buttons', mr_buttons + 'px')
+            document.getElementById('box_buttons1').style.setProperty('--width-buttons', width_buttons + 'px')
+            document.getElementById('box_buttons2').style.setProperty('--width-buttons', width_buttons + 'px')
+            document.getElementById('box_buttons1').style.setProperty('--height-buttons', height_buttons + 'px')
+            document.getElementById('box_buttons2').style.setProperty('--height-buttons', height_buttons + 'px')
+            document.getElementById('box_buttons2').style.setProperty('--mt-box2', mt_box2 + 'px')
+            var mr_active_modal = ((width_buttons - width_active_modal) / 2) + mr_buttons
+            document.getElementById('active_modal_room').style.setProperty('--mr-active-modal', mr_active_modal + 'px')
+            var mt_box1 = document.getElementById('main_div').offsetHeight / 10.325
+            document.getElementById('box_buttons1').style.setProperty('--mt-box1', mt_box1 + 'px')
+            document.getElementById('box_buttons2').style.setProperty('--mt-box1', mt_box1 + 'px')
+            var pt_active_modal = document.getElementById('main_div').offsetHeight / 20.65
+            var pr_active_modal = document.getElementById('main_div').offsetHeight / 18
+            document.getElementById('active_modal_room').style.setProperty('--pt-active-modal', pt_active_modal + 'px')
+            document.getElementById('active_modal_room').style.setProperty('--pl-active-modal', mr_buttons + 'px')
+            document.getElementById('active_modal_room').style.setProperty('--pr-active-modal', pr_active_modal + 'px')
+            var height_head_active_modal = document.getElementById('main_div').offsetHeight / 10.0895765
+            document.getElementById('head_active_modal_room').style.setProperty('--height-head-active-modal', height_head_active_modal + 'px')
+            if (document.getElementById('list_number') != null) {
+                var height_list_number = document.getElementById('main_div').offsetHeight / 16.9262295
+                document.getElementById('list_number').style.setProperty('--height-list-number', height_list_number + 'px')
+                var height_border_text = document.getElementById('main_div').offsetHeight / 61.95
+                document.getElementById('border_text').style.setProperty('--height-border-text', height_border_text + 'px')
+                var mt_border_text = document.getElementById('main_div').offsetHeight / 77.4375
+                document.getElementById('border_text').style.setProperty('--mt-border-text', mt_border_text + 'px')
+                var height_one_of_three = document.getElementById('main_div').offsetHeight / 11.2636364
+                document.getElementById('one_of_three').style.setProperty('--height-one-of-three', height_one_of_three + 'px')
+                var height_lable = document.getElementById('main_div').offsetHeight / 44
+                var mt_lable = document.getElementById('main_div').offsetHeight / 33.1283422
+                document.getElementById('lable').style.setProperty('--height-lable', height_lable + 'px')
+                document.getElementById('lable').style.setProperty('--mt-lable', mt_lable + 'px')
+                var height_group_inputs = document.getElementById('main_div').offsetHeight / 33.857
+                document.getElementById('group_inputs').style.setProperty('--height-group-inputs', height_group_inputs + 'px')
+                var height_div_button = document.getElementById('main_div').offsetHeight / 24.1992188
+                var mt_div_button = document.getElementById('main_div').offsetHeight / 42.7241379
+                document.getElementById('div_button').style.setProperty('--height-div-button', height_div_button + 'px')
+                document.getElementById('div_button').style.setProperty('--mt-div-button', mt_div_button + 'px')
+            }
+            var width_buttons_tel = document.getElementById('main_div').offsetHeight / 1.70877778
+            var height_buttons_Tel = document.getElementById('main_div').offsetHeight / 18.754878
+            document.getElementById('box_buttons1').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
+            document.getElementById('box_buttons2').style.setProperty('--width-buttons-tel', width_buttons_tel + 'px')
+            document.getElementById('box_buttons1').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
+            document.getElementById('box_buttons2').style.setProperty('--height-buttons-tel', height_buttons_Tel + 'px')
+            if (document.getElementById('btn_buy') != null) {
+                var hight_btn_buy = document.getElementById('main_div').offsetHeight / 21
+                document.getElementById('btn_buy').style.setProperty('--height-btn-buy', hight_btn_buy + 'px')
+            }
+        }, true);
     </script>
     <script src="script.js"></script>
     <script src="adptivity.js"></script>
 </body>
+
 </html>

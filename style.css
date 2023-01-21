@@ -2,8 +2,32 @@
     font-family: "OriginalbyBrynda";
     src: url(fonts/Minecraftchmc.ttf);
 }
+:root {
+    --btn-height: calc(100vw / 29.86);
+    --margin-left: calc(100vh / 3.15);
+    --width: calc(100vh / 3.147);
+    --left: calc(-100vh / 3.147);
+    --height: calc(100vh - 100vw / 8);
+    --btn-height: calc(100vw / 29.86);
+    --btn-height-active: calc(100vw / 29.86);
+    --btn-telegram-height: calc(100vw / 21.36);
+    --btn-width-height: calc(100vw / 24.68);
+    --btn-left: calc(100vh / 15.9);
+    --btn-bottom: calc(100vh / 10.9);
+    --btn-width-height2: calc(100vh / 11.29);
+    --btn-left: calc(100vw / 21.36);
+    --main-height: calc((100vh - (100vh / 100 * 6)) - (100vw / 37));
+    --main-width: calc(100vw - (100vh / 3.147));
+    --margin-left-input: calc(100vw / 21.36);
+    --btn-telegram-height: calc(100vw / 21.36);
+    --btn-telegram-height: calc(100vw / 21.36);
+}
+#btn_facebook {
+    --btn-left: calc(100vh / 6);
+}
+
 .body {
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0px;
     background-image: url("images/bg_start.jpg");
     background-size: cover;
@@ -239,15 +263,32 @@
     background-size: 100%;
     height: 1vw;
 }
+html.hide{
+    overflow: hidden;
+}
+html.hide body{
+    overflow: hidden;
+}
+.animate-right {
+    left: 0px !important;
+    pointer-events: visible !important;
+}
+.animate-right .podmenu {
+    left: 0px !important;
+}
 .podmenu {
+    width: 15.5vw;
+}
+.podmenu__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+}
+.podmenu__block {
     top: 0px;
-    left: 0px;
-    width: 15.5vw;
+    position: fixed;
     height: 77vh;
+    left: 0px;
 }
 .room-icon-kaktus {
     width: 60%;
@@ -257,14 +298,26 @@
     width: 40%;
     margin-top: 2.5%;
 }
+.logo-title {
+    color: white;
+    font-family: "OriginalbyBrynda";
+    font-size: 5vh;
+    line-height: 0.6;
+    transform: translateX(1%);
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5%;
+    line-height: 0.45;
+}
 .balance {
     width: 65%;
-    height: 4%;
+    height: 3.2vh;
     margin-top: 4%;
     background-image: url("images/balance-red.png");
     background-size: cover;
     color: white;
     font-family: "OriginalbyBrynda";
+    line-height: 0.5;
 }
 .btn-menu {
     width: 70%;
@@ -307,7 +360,7 @@
 .buttons-room {
     margin-top: 9%;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     align-items: center;
 }
 .btn-telegram {
@@ -592,15 +645,16 @@
     align-items: center;
 }
 .btn-poisk {
-    width: 47.6%;
-    height: 88%;
+    /* width: 47.6%; */
+    width: 8.8vh;
+    height: 9.4vh;
     background-color: #fffeff00;
     border: none;
     cursor: pointer;
 }
 .btn-exit {
-    width: 47.8%;
-    height: 88%;
+    width: 8.8vh;
+    height: 9.4vh;
     background-color: #fffeff00;
     border: none;
     cursor: pointer;
@@ -610,7 +664,7 @@
     background-image: url("images/menu_top_line.png");
     background-size: 99.25%;
     width: 100%;
-    height: 3vh;
+    height: 1.9vh;
 }
 .btn_telegram_tel {
     display: none;
@@ -627,9 +681,6 @@
 }
 .btn-icon-menu {
     display: none;
-}
-.animate-right {
-    left: 0px !important;
 }
 .fl-w-100 {
     width: 100%;
@@ -1050,19 +1101,35 @@
     }
     .podmenu {
         /* background-image: url("images/bg_podmenu.png"); */
+
+        transition: left 1s;
+        /* height: auto; */
+        position: relative;
+        z-index: 500;
+        left: var(--left);
+    }
+    .podmenu__content {
         background-image: url("images/bg_podmenu.svg");
         background-size: cover;
         background-position: bottom;
-        height: 100vh;
-        left: var(--left);
+    }
+    .podmenu__block {
+        width: 100vw;
+        overflow-y: auto;
+        scrollbar-width: none;
+        /* height: auto; */
+        height: 100%;
+        min-height: 100%;
         z-index: 500;
-        transition: 1s;
+        pointer-events: none;
     }
     .btn-menu {
         height: 6vh !important;
+        margin-top: 2.2vh;
     }
     .btn-active {
         height: 6vh !important;
+        margin-top: 2.2vh;
     }
     .btn-facebook {
         display: none;
@@ -1070,36 +1137,53 @@
     .btn-telegram {
         display: none;
     }
+    .btns-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6.1vh;
+        margin-bottom: 3.8vh;
+    }
     .btn_telegram_tel {
         display: block;
         width: 27%;
         height: 8.7%;
-        position: absolute;
+        /* position: absolute; */
         left: 20%;
         bottom: 3.9%;
         border-radius: 50%;
         background: url("images/tg.png") center/contain no-repeat;
+
+        margin-right: 2vh;
+        width: 8.6vh;
+        height: 8.6vh;
     }
     .btn_facebook_tel {
         display: block;
         width: 27%;
         height: 8.7%;
-        position: absolute;
+        /* position: absolute; */
         left: 52.8%;
         bottom: 3.9%;
         border-radius: 50%;
         background: url("images/tw.png") center/contain no-repeat;
+
+        width: 8.6vh;
+        height: 8.6vh;
     }
     .menu-bottom-buttons {
         background-image: url("images/up_line_right.png");
         background-size: cover;
-        position: absolute;
+        background-repeat: no-repeat;
+        /* position: absolute; */
         left: 21%;
         bottom: 22%;
         width: 58%;
         height: 10%;
         display: flex;
         align-items: center;
+
+        margin-top: 3.5vh;
     }
     .up-line-right {
         display: none;
