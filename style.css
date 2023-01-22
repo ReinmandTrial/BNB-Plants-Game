@@ -700,11 +700,11 @@ html.hide body {
     padding-left: 5%;
     background-color: rgba(0, 0, 0, 0.7);
     overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
 }
 .podmain::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 .dashboard-modal1 {
     width: 19vw;
@@ -1474,7 +1474,7 @@ html.hide body {
         height: 100vw;
     }
 }
-@media (max-aspect-ratio: 970/90) {
+@media (max-aspect-ratio: 10/9) {
     .d-none-predmodal3 {
         display: none !important;
     }
