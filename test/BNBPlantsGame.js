@@ -17,7 +17,7 @@ let contract;
 
     it("Register", async function () {
       const [owner,addr1] = await ethers.getSigners();
-      const amount = 0.025
+      const amount = 0.06
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).register({value: value});
       console.log(`✓ Register ${addr1.address}`)
@@ -27,7 +27,7 @@ let contract;
 
     it("Register with referrer", async function () {
       const [owner,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.025
+      const amount = 0.06
       const value= ethers.utils.parseEther(amount.toString())
       const ref=addr1.address
       console.log(`✓ Register ${addr2.address} with referrer ${ref}`)
@@ -61,9 +61,8 @@ let contract;
       console.log(`✓ Balance Addr2: ${balance2} BNB`)
     });
 
-    it("Get Contract balance", async function () {
-      const balance0 = ethers.utils.formatEther(await contract.getContractBalance())
-      console.log(`✓ Balance contract: ${balance0} BNB`)
+    it("Get Contract balance is zero", async function () {
+      expect( await contract.getContractBalance()).to.equal("0") ;
     });
 
 

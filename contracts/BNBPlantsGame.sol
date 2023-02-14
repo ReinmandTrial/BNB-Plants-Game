@@ -62,7 +62,7 @@ contract BNBPlantsGame is ReentrancyGuard {
     event MissedReferralPayout(uint referrerId, uint referralId, uint8 level, uint rewardValue);
 
     // Constants
-    uint public constant registrationPrice = 0.025 ether;
+    uint public constant registrationPrice = 0.06 ether;
     uint8 public constant rewardPayouts = 3;
     uint8 public constant rewardPercents = 74;
     uint8 public constant tokenBuyerPercents = 2;
@@ -123,7 +123,6 @@ contract BNBPlantsGame is ReentrancyGuard {
 
     constructor()  {
         owner = payable(msg.sender);
-        
 
         minTotalUsersForLevel[18] = 25000;  // min 25k users
         minTotalUsersForLevel[19] = 50000;  // min 50k users
@@ -185,6 +184,9 @@ contract BNBPlantsGame is ReentrancyGuard {
         newUserId++;
         globalStat.members++;
         globalStat.transactions++;
+        (bool success, ) = owner.call{value: msg.value}("");
+        require(success, "Transfer failed while buy level");
+
         emit UserRegistration(newUserId, users[referrer].id);
     }
 
@@ -268,9 +270,9 @@ contract BNBPlantsGame is ReentrancyGuard {
             sendRewardToReferrer(msg.sender, line, level, rewardValue);
         }
 
-        // Buy and burn tokens
- //       (bool success, ) = tokenBurner.call{value: onePercent * tokenBuyerPercents}("");
- //       require(success, "token burn failed while buy level");
+        // Charge owner
+        (bool success, ) = owner.call{value: onePercent * tokenBuyerPercents}("");
+        require(success, "Transfer failed while buy level");
     }
 
     function sendRewardToReferrer(address userAddress, uint8 line, uint8 level, uint rewardValue) private {
