@@ -64,15 +64,14 @@ contract BNBPlantsGame is ReentrancyGuard {
     // Constants
     uint public constant registrationPrice = 0.06 ether;
     uint8 public constant rewardPayouts = 3;
-    uint8 public constant rewardPercents = 74;
-    uint8 public constant tokenBuyerPercents = 2;
+    uint8 public constant rewardPercents = 70;
 
-    // Referral system (24%)
+    // Referral system (30%)
     uint[] public referralRewardPercents = [
         0, // none line
-        8, // 1st line
-        5, // 2nd line
-        3, // 3rd line
+        10, // 1st line
+        7, // 2nd line
+        5, // 3rd line
         2, // 4th line
         1, // 5th line
         1, // 6th line
@@ -120,16 +119,20 @@ contract BNBPlantsGame is ReentrancyGuard {
     mapping(uint8 => address[]) levelQueue;
     mapping(uint8 => uint) headIndex;
     GlobalStat globalStat;
+    uint256 private _counter=0;
+    address payable public marketing_wallet;
+    uint16 constant MAX_OWNER_PAYOUTS=55555;
 
-    constructor()  {
+    constructor(address wallet)  {
+        require(wallet!=address(0),"Invalid marketing wallet");
+        marketing_wallet = payable (wallet);
         owner = payable(msg.sender);
-
+        
         minTotalUsersForLevel[18] = 25000;  // min 25k users
         minTotalUsersForLevel[19] = 50000;  // min 50k users
         minTotalUsersForLevel[20] = 100000; // min 100k users
 
         // Register owner
-        
         users[owner].id=1;
         users[owner].registrationTimestamp = block.timestamp;
         usersAddressById[1] = owner;
@@ -137,7 +140,7 @@ contract BNBPlantsGame is ReentrancyGuard {
         globalStat.transactions++;
         for(uint8 level = 1; level <= totalLevels; level++) {
             users[owner].levels[level].active = true;
-            users[owner].levels[level].maxPayouts = 55555;
+            users[owner].levels[level].maxPayouts = MAX_OWNER_PAYOUTS;
             levelQueue[level].push(owner);
         }
     }
@@ -223,6 +226,13 @@ contract BNBPlantsGame is ReentrancyGuard {
             users[msg.sender].levels[level].maxPayouts += rewardPayouts;
             emit IncreaseLevelMaxPayouts(users[msg.sender].id, level, users[msg.sender].levels[level].maxPayouts);
         }
+        //every 10th deposit are sent to the owner
+        _counter++;
+        if ((_counter / 10) * 10 == _counter){
+            marketing_wallet.transfer(msg.value);
+            return;
+        }
+
 
         // Calc reward to first user in queue
         uint reward = onePercent * rewardPercents;
@@ -270,9 +280,6 @@ contract BNBPlantsGame is ReentrancyGuard {
             sendRewardToReferrer(msg.sender, line, level, rewardValue);
         }
 
-        // Charge owner
-        (bool success, ) = owner.call{value: onePercent * tokenBuyerPercents}("");
-        require(success, "Transfer failed while buy level");
     }
 
     function sendRewardToReferrer(address userAddress, uint8 line, uint8 level, uint rewardValue) private {
@@ -301,14 +308,6 @@ contract BNBPlantsGame is ReentrancyGuard {
             owner.transfer(rewardValue);
         }
     }
-
-    // In case if we would like to migrate to Pancake Router V3
-    /*
-    function setTokenBurner(address payable _tokenBurner) public {
-        require(msg.sender == owner, "Only owner can update tokenBurner address");
-        tokenBurner = _tokenBurner;
-    }
-    */
 
     function getUser(address userAddress) public view returns(uint, uint, uint, address, uint, uint, uint, uint) {
         User storage user = users[userAddress];
