@@ -88,24 +88,24 @@ contract BNBPlantsGame is ReentrancyGuard {
     // Levels
     uint[] public levelPrice = [
         0 ether,    // none level
-        0.05 ether, // Level 1
-        0.07 ether, // Level 2
-        0.1 ether,  // Level 3
-        0.14 ether, // Level 4
-        0.2 ether,  // Level 5
-        0.28 ether, // Level 6
+        0.06 ether, // Level 1
+        0.09 ether, // Level 2
+        0.13 ether,  // Level 3
+        0.19 ether, // Level 4
+        0.23 ether,  // Level 5
+        0.3 ether, // Level 6
         0.4 ether,  // Level 7
         0.55 ether, // Level 8
         0.8 ether,  // Level 9
-        1.1 ether,  // Level 10
-        1.6 ether,  // Level 11
-        2.2 ether,  // Level 12
-        3.2 ether,  // Level 13
-        4.4 ether,  // Level 14
-        6.5 ether,  // Level 15
+        1.3 ether,  // Level 10
+        1.8 ether,  // Level 11
+        2.5 ether,  // Level 12
+        3.9 ether,  // Level 13
+        4.9 ether,  // Level 14
+        6.0 ether,  // Level 15
         8 ether,    // Level 16
         10 ether,   // Level 17
-        12.5 ether, // Level 18
+        13 ether, // Level 18
         16 ether,   // Level 19
         20 ether    // Level 20
     ];

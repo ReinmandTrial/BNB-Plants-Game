@@ -42,9 +42,9 @@ let contract;
 
     });
 
-    it("Addr1 buys level 1 / 0.05BNB", async function () {
+    it("Addr1 buys level 1 / 0.06BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.05
+      const amount = 0.06
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(1, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -55,9 +55,9 @@ let contract;
       console.log(`✓ Balance Addr1: ${balance} BNB`)
     });
 
-    it("Addr2 buys level 1 / 0.05BNB", async function () {
+    it("Addr2 buys level 1 / 0.06BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.05
+      const amount = 0.06
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr2).buyLevel(1, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -70,9 +70,9 @@ let contract;
       console.log(`✓ Balance Addr2: ${balance2} BNB`)
     });
 
-    it("Addr1 buys level 2 / 0.07BNB", async function () {
+    it("Addr1 buys level 2 / 0.09BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.07
+      const amount = 0.09
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(2, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -83,9 +83,9 @@ let contract;
       console.log(`✓ Balance Addr1: ${balance} BNB`)
     });
 
-    it("Addr1 buys level 3 / 0.1BNB", async function () {
+    it("Addr1 buys level 3 / 0.13BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.1
+      const amount = 0.13
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(3, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -96,9 +96,9 @@ let contract;
       console.log(`✓ Balance Addr1: ${balance} BNB`)
     });
 
-    it("Addr1 buys level 4 / 0.14BNB", async function () {
+    it("Addr1 buys level 4 / 0.19BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.14
+      const amount = 0.19
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(4, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -109,9 +109,9 @@ let contract;
       console.log(`✓ Balance Addr1: ${balance} BNB`)
     });
 
-    it("Addr1 buys level 5 / 0.2BNB", async function () {
+    it("Addr1 buys level 5 / 0.23BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.2
+      const amount = 0.23
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(5, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -122,9 +122,9 @@ let contract;
       console.log(`✓ Balance Addr1: ${balance} BNB`)
     });
 
-    it("Addr1 buys level 6 / 0.28BNB", async function () {
+    it("Addr1 buys level 6 / 0.3BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 0.28
+      const amount = 0.3
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(6, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -174,9 +174,9 @@ let contract;
       console.log(`✓ Balance Addr1: ${balance} BNB`)
     });
 
-    it("Addr1 buys level 10 / 1.1BNB", async function () {
+    it("Addr1 buys level 10 / 1.3BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 1.1
+      const amount = 1.3
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(10, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))
@@ -187,9 +187,9 @@ let contract;
       console.log(`✓ Balance Addr1: ${balance} BNB`)
     });
 
-    it("Addr1 buys level 11 / 1.6BNB", async function () {
+    it("Addr1 buys level 11 / 1.8BNB", async function () {
       const [owner,marketing,addr1,addr2] = await ethers.getSigners();
-      const amount = 1.6
+      const amount = 1.8
       const value= ethers.utils.parseEther(amount.toString())
       await contract.connect(addr1).buyLevel(11, {value: value});
       const balance0 = ethers.utils.formatEther(await ethers.provider.getBalance(owner.address))

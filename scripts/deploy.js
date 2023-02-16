@@ -7,6 +7,8 @@ async function main() {
   const CONTRACT = await ethers.getContractFactory("BNBPlantsGame");
   contract = await CONTRACT.deploy(marketing.address);
   console.log(`CONTRACT at ${contract.address}`)
+  console.log(`Owner at ${owner.address}`)
+  console.log(`Marketing at ${marketing.address}`)
 }
 
 main();
