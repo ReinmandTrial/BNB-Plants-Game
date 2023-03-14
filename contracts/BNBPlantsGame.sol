@@ -109,7 +109,7 @@ contract BNBPlantsGame is ReentrancyGuard {
         16 ether,   // Level 19
         20 ether    // Level 20
     ];
-    mapping(uint8 => uint) minTotalUsersForLevel;
+    
     uint totalLevels = levelPrice.length - 1;
 
     // State variables
@@ -128,10 +128,6 @@ contract BNBPlantsGame is ReentrancyGuard {
         marketing_wallet = payable (wallet);
         owner = payable(msg.sender);
         
-        minTotalUsersForLevel[18] = 25000;  // min 25k users
-        minTotalUsersForLevel[19] = 50000;  // min 50k users
-        minTotalUsersForLevel[20] = 100000; // min 100k users
-
         // Register owner
         users[owner].id=1;
         users[owner].registrationTimestamp = block.timestamp;
@@ -197,7 +193,6 @@ contract BNBPlantsGame is ReentrancyGuard {
         require(isUserRegistered(msg.sender), "User is not registered");
         require(level > 0 && level <= totalLevels, "Invalid level");
         require(levelPrice[level] == msg.value, "Invalid BNB value");
-        require(globalStat.members >= minTotalUsersForLevel[level], "Level not available yet");
         require(msg.sender==tx.origin, "Can not be a contract");
         for(uint8 l = 1; l < level; l++) {
             require(users[msg.sender].levels[l].active, "All previous levels must be active");
